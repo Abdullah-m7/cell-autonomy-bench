@@ -1,0 +1,13 @@
+{
+  "status": "READY_FOR_BLINDED_DOMAIN_EXPERT_PILOT",
+  "gold_label_status": "NONE_YET",
+  "pilot_artifact": "benchmark/expert_review_pilot_v0.2_cleanroom.csv",
+  "pilot_rows": 24,
+  "pilot_sha256": "f8517d4bb2a9b6cf97f87a301044795793aae9839dda989890020e879c35ba5c",
+  "full_cleanroom_artifact": "benchmark/expert_review_full_v0.2_cleanroom.csv",
+  "full_rows": 100,
+  "full_cleanroom_sha256": "f94145021f7bb2407c08677a45adeeb28fa91f054383537bf9da61ab776da9ff",
+  "internal_source_freeze_sha256": "bcc93693e56434d6a550781a2e38650082c71a085f91e7998636d45232c61e95",
+  "raw_case_ids_outbound": false,
+  "provisional_labels_outbound": false
+}

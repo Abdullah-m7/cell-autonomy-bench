@@ -94,3 +94,7 @@ This repository is a **research benchmark**, not clinical guidance, a validated 
 The predeclared anti-leakage gate passed on the 100-case v0.2 candidate. The candidate includes a stable evidence registry and 20 matched counterfactual pairs. The frozen blinded worksheet is `benchmark/expert_adjudication_v0.2_frozen.csv`; its SHA-256 is pinned in `benchmark/FREEZE_MANIFEST_v0.2.json`.
 
 **Important:** structural PASS does not make the provisional labels biologically correct. No case is an expert `gold` label until blinded stem-cell domain-expert adjudication is completed.
+
+## Stage 003 — blinded domain-expert gate
+
+A leak-checked clean-room expert packet is now prepared. Outbound review IDs are opaque and do not reveal internal case origin or counterfactual A/B pairing. The first contact should use the 24-case pilot attachment only; the public repository must not be sent before the expert's blinded first pass is frozen.
