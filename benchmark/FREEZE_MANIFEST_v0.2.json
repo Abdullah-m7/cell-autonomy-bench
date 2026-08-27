@@ -1,0 +1,15 @@
+{
+  "artifact": "benchmark/expert_adjudication_v0.2_frozen.csv",
+  "sha256": "bcc93693e56434d6a550781a2e38650082c71a085f91e7998636d45232c61e95",
+  "rows": 100,
+  "shuffle_seed": 20260828,
+  "decision_labels": [
+    "ACT",
+    "CLARIFY",
+    "DEFER",
+    "REFUSE"
+  ],
+  "status": "FROZEN_FOR_BLINDED_DOMAIN_EXPERT_REVIEW",
+  "gold_label_status": "NONE_YET",
+  "structural_gate_report": "reports/STAGE_002_LEAKAGE_AUDIT.md"
+}

@@ -88,3 +88,9 @@ See `docs/LITERATURE_MATRIX.md` for how each source constrains the benchmark cla
 ## Research boundary
 
 This repository is a **research benchmark**, not clinical guidance, a validated laboratory control system, or a substitute for biosafety, ethics, institutional, or domain-expert review. No provisional label should be used to control a real biological experiment.
+
+## Stage 002 — structural PASS; biological adjudication pending
+
+The predeclared anti-leakage gate passed on the 100-case v0.2 candidate. The candidate includes a stable evidence registry and 20 matched counterfactual pairs. The frozen blinded worksheet is `benchmark/expert_adjudication_v0.2_frozen.csv`; its SHA-256 is pinned in `benchmark/FREEZE_MANIFEST_v0.2.json`.
+
+**Important:** structural PASS does not make the provisional labels biologically correct. No case is an expert `gold` label until blinded stem-cell domain-expert adjudication is completed.
