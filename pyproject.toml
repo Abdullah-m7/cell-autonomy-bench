@@ -1,0 +1,30 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "cellautonomybench"
+version = "0.1.0.dev0"
+description = "Research benchmark for provenance-aware selective AI autonomy in living-cell experimentation"
+readme = "README.md"
+requires-python = ">=3.10"
+license = {text = "Research prototype; license not yet selected"}
+authors = [
+  {name = "CellAutonomyBench contributors"}
+]
+classifiers = [
+  "Development Status :: 2 - Pre-Alpha",
+  "Intended Audience :: Science/Research",
+  "Programming Language :: Python :: 3",
+]
+
+[project.optional-dependencies]
+test = ["pytest>=8"]
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.pytest.ini_options]
+pythonpath = ["src"]
+testpaths = ["tests"]
+addopts = "-q"

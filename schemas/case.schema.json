@@ -1,0 +1,52 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://github.com/Abdullah-m7/cell-autonomy-bench/schemas/case.schema.json",
+  "title": "CellAutonomyBench case",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "case_id",
+    "family",
+    "context",
+    "observation",
+    "provenance_state",
+    "shift_state",
+    "proposed_intervention",
+    "reversibility",
+    "consequence_level",
+    "provisional_action",
+    "provisional_rationale",
+    "evidence_basis"
+  ],
+  "properties": {
+    "case_id": {"type": "string", "pattern": "^CA-[0-9]{3,}$"},
+    "family": {"type": "string"},
+    "context": {"type": "string"},
+    "observation": {"type": "string"},
+    "provenance_state": {
+      "type": "string",
+      "enum": ["complete", "partial", "critical_missing", "broken"]
+    },
+    "shift_state": {"type": "string"},
+    "proposed_intervention": {"type": "string"},
+    "reversibility": {
+      "type": "string",
+      "enum": ["reversible", "partial", "low", "n/a"]
+    },
+    "consequence_level": {
+      "type": "string",
+      "enum": ["low", "medium", "high"]
+    },
+    "provisional_action": {
+      "type": "string",
+      "enum": ["ACT", "CLARIFY", "DEFER", "REFUSE"]
+    },
+    "provisional_rationale": {"type": "string"},
+    "evidence_basis": {"type": "string"},
+    "expert_gold_action": {
+      "type": "string",
+      "enum": ["", "ACT", "CLARIFY", "DEFER", "REFUSE"]
+    },
+    "expert_rationale": {"type": "string"}
+  }
+}
