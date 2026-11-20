@@ -8,7 +8,7 @@
 
 Evidence must separately distinguish **lipid metabolism**, **late-endosome/lysosome localization**, and **functional clearance**. These are not interchangeable, and the proposed full causal link is stronger than any isolated marker change. Compartment, cell lineage, genotype, incubation and statistical unit are recorded per finding.
 
-## Source corpus: four primary studies, 12 findings
+## Source corpus: five primary studies, 19 findings
 
 | Block | Source and original identifiers | Scope and what the evidence does NOT establish |
 |---|---|---|
@@ -16,6 +16,7 @@ Evidence must separately distinguish **lipid metabolism**, **late-endosome/lysos
 | P2, 2 findings | TCW et al. *Cell* 2022, DOI [10.1016/j.cell.2022.05.017](https://doi.org/10.1016/j.cell.2022.05.017), PMID 35750033, [PMCID PMC9340815](https://pmc.ncbi.nlm.nih.gov/articles/PMC9340815/) | Isogenic human astrocyte lines. Figure 6H free-cholesterol/lysosome colocalization (~3x in APOE4); Figure 6I APOE secretion (~63% lower). APOE secretion is a **lipid-handling context marker**, not a standalone assay of lysosomal hydrolysis. |
 | P3, 5 findings | Revanna et al. **bioRxiv preprint, not peer-reviewed**, 13 May 2026, DOI [10.64898/2026.05.12.724612](https://doi.org/10.64898/2026.05.12.724612), PMID 42182449, [PMCID PMC13192593](https://pmc.ncbi.nlm.nih.gov/articles/PMC13192593/) | Isogenic human APOE3/APOE4 iPSC-derived microglia. Figure 3: cholesterol esters, **baseline late endosome/lysosome pH similar** between genotypes, but APOE4 lacks debris-triggered adaptive acidification, and DQ-BSA degradation differs. Fig 7M qualitative replication in a second human parental background (UCI5). pH measured here is **late/lysosomal**, not early-endosomal H1. |
 | P4, 1 finding | Hellén et al. *Journal of Neuroinflammation* 2025, DOI [10.1186/s12974-025-03470-y](https://doi.org/10.1186/s12974-025-03470-y), PMID 40457456, [PMCID PMC12131611](https://pmc.ncbi.nlm.nih.gov/articles/PMC12131611/) | Human APOE3/3 and APOE4/4 donor-derived microglia exposed to Aβ42; Fig 4F–H LGALS1 puncta indicate increased **lysosomal membrane damage** with APOE4. Lipid changes are not experimentally manipulated in that exact panel: contextual/weak evidence for the full H5 causal chain, not direct lipid-mediated proof. |
+| P5, 7 findings | Mesentier-Louro et al. *Cell Stem Cell* (2026, peer-reviewed), DOI [10.1016/j.stem.2026.08.001](https://doi.org/10.1016/j.stem.2026.08.001), PMID 42636814, [PMCID PMC13528747](https://pmc.ncbi.nlm.nih.gov/articles/PMC13528747/) | Human isogenic APOE3/3 vs APOE4/4 astrocytes from **two donor backgrounds**; Fig 5a cholesterol accumulation with separate donor tests; Fig 4d baseline DQ-BSA impairment; Fig 5b MβCD rescue of DQ-BSA, and Fig S5c replication in donor 2; non-cyclodextrin treatments in Fig 5b did not show the same rescue. Different panels establish different steps, not one exclusive molecular mechanism. Earlier preprint of same study is NOT added as a separate independent paper. |
 
 This is a **selected literature audit**, not an exhaustive systematic review, and is not a priority claim for a new mechanism. Relevant no-effect/counterexamples are intentionally included, especially Revanna's similar basal lysosomal pH.
 
@@ -27,6 +28,11 @@ This is a **selected literature audit**, not an exhaustive systematic review, an
 4. Use official 19-column MecCog format. `Effect size` allows a percentage, fold-change or `qualitative`; `P value` and `Sample size` use `N/A` with correct provenance if unreported. Preserve p/n in descriptive notes only when source grounds them. Figure images need separate inspection before claiming graph-extracted values.
 5. For **directness**, score the *whole H5 hypothesis*: APOE4 → lipid metabolism disruption → late endosome/lysosome dysfunction. An increased filipin signal by itself is a lipid/localization endpoint, not degradation. Aβ42-triggered lysosomal damage without a lipid perturbation is contextual rather than direct evidence for lipid-mediated causality. Official strength runs **1 strongest → 5 weakest**, and scores are provisional scientific judgments, not authority rankings.
 6. Keep counterevidence (e.g. unchanged baseline pH, incomplete timecourse rescue) as explicitly separate findings. Do not collapse acute cargo uptake and degradation into one measure.
+
+
+## Additional P5 extraction gates (published August 2026)
+
+The source is the final peer-reviewed *Cell Stem Cell* version (DOI `10.1016/j.stem.2026.08.001`), not a separate original experiment from any earlier preprint of the same study. Panel-specific results: Fig 5a APOE4>APOE3 BODIPY-cholesterol in donor 1 (p=0.001) and donor 2 (p=0.002; n=3 culture replicates each); Fig 4d DQ-BSA proteolytic deficit in donor 1 (p=0.0032) and donor 2 (p<0.0001; n=3–4 cultures in caption); Fig 5b MβCD-treated APOE4 cells had improved lysosomal DQ-BSA (p=0.019, n=4 cultures); Fig S5c repeats MβCD rescue in donor 2 (p=0.0045; exact supplementary n must be independently checked, so leave n N/A); other Fig 5b lipid-directed drugs did not improve lysosomal DQ-BSA consistently, and their individual p values are unreported in the paper text and remain N/A. Every selected comparison is one finding row, with p/n specific to that row. DQ-BSA is a cleavage-proxy affected by cargo entry as well as organelle proteolytic capacity; this is why cyclodextrin rescue gets Class 3 indirect-output rather than automatically Class 1. The study is **prior art** for any therapeutic claim based solely on cholesterol depletion. See https://pmc.ncbi.nlm.nih.gov/articles/PMC13528747/ .
 
 ## Reproducibility and scope
 
