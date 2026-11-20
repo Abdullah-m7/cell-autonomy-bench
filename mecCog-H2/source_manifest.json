@@ -1,0 +1,93 @@
+{
+  "project": "Mechanism Atlas",
+  "contest": "MecCog 2026 Step 1",
+  "hypothesis_id": "H2",
+  "hypothesis": "In some types of non-Alzheimer's, non-aged human brain cells, for example astrocytes, APOE4 causes impaired ARF6-related recycling of receptors between the cell surface and the endosome, compared with APOE3.",
+  "source_grade_policy": "Full H2 claim needs APOE genotype + ARF6 activity/route + actual receptor recycling; ABCA1 is lipid transporter, not conventional receptor. Default contextual/Other if chain incomplete.",
+  "study_blocks": [
+    {
+      "block": "P1",
+      "doi": "10.1523/JNEUROSCI.1400-19.2019",
+      "pmid": "31641056",
+      "pmcid": "PMC6880458",
+      "source_type": "PubMed published",
+      "author": "Rawat et al. 2019",
+      "n_findings": 9,
+      "panels": [
+        "1E-I",
+        "2A-D",
+        "3C-E",
+        "5A-C",
+        "6A-B",
+        "7A-B"
+      ],
+      "caveat": "Primary mouse astrocytes vs HeLa models; ARF6 total protein is not activity, ABCA1 transporter not receptor"
+    },
+    {
+      "block": "P2",
+      "doi": "10.1016/j.celrep.2020.108224",
+      "pmid": "33027662",
+      "pmcid": "PMC8190562",
+      "source_type": "PubMed published",
+      "author": "Narayan et al. 2020",
+      "n_findings": 3,
+      "panels": [
+        "1D-I",
+        "4E-H",
+        "S4G"
+      ],
+      "caveat": "Human isogenic astrocytes, early endocytosis not receptor recycling; no ARF6 direct readout"
+    },
+    {
+      "block": "P3",
+      "doi": "10.1161/ATVBAHA.116.308418",
+      "pmid": "27758770",
+      "pmcid": "PMC5123748",
+      "source_type": "PubMed published",
+      "author": "Mukhamedova et al. 2016",
+      "n_findings": 3,
+      "panels": [
+        "1A-E",
+        "4C-D",
+        "5A-D"
+      ],
+      "caveat": "Macrophages with no APOE3/E4 manipulation; lipid state-dependent routing, ABCA1 transporter"
+    },
+    {
+      "block": "P4",
+      "doi": "10.1016/j.stemcr.2025.102607",
+      "pmid": "40845853",
+      "pmcid": "PMC12447338",
+      "source_type": "PubMed published",
+      "author": "Bell et al. 2025",
+      "n_findings": 3,
+      "panels": [
+        "5G-H",
+        "6A-D"
+      ],
+      "caveat": "Human brain endothelial isogenic pairs, no ARF6-GTP assay, TfR1 recycling no difference"
+    },
+    {
+      "block": "P5",
+      "doi": "10.1038/s44400-026-00105-8",
+      "pmid": "N/A",
+      "pmcid": "N/A",
+      "source_type": "Web article",
+      "author": "Lysaker et al. npj Dementia 2026",
+      "n_findings": 2,
+      "panels": [
+        "3E",
+        "PXD077344 source XML gene rows ARF6, RAB7A"
+      ],
+      "caveat": "Peer-reviewed article; PubMed ID not independently verified; total protein not ARF6 activity; one isogenic background for proteomics"
+    }
+  ],
+  "n_source_papers": 5,
+  "n_source_findings": 20,
+  "source_coverage": "Selected mechanistic and contrary/null source findings; not an exhaustive systematic review or direct tests of full H2.",
+  "original_sources_not_redistributed": true,
+  "human_expert_signoff": false,
+  "wet_lab_performed_by_team": false,
+  "model_assistance": "GPT-6 ChatGPT; researcher-directed literature and source audit",
+  "status": "PUBLIC_METHOD_SNAPSHOT_NO_OFFICIAL_SUBMISSION"
+}
