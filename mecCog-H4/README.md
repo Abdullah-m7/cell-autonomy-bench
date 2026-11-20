@@ -15,7 +15,7 @@ The researcher and GPT-6 reviewed primary text, figures and supplementary source
 
 ## 2. Sources and search
 
-Six source studies in the current *draft* H4 spreadsheet:
+Seven source studies in the current *draft* H4 spreadsheet:
 
 - Xian et al., eLife (2018), DOI **10.7554/eLife.40048**, PMID 30375977.
 - Chen et al., PNAS (2010), DOI **10.1073/pnas.0914984107**, PMID 20547867.
@@ -23,8 +23,9 @@ Six source studies in the current *draft* H4 spreadsheet:
 - Guo et al., Cell (online 2024, journal issue 2025), DOI **10.1016/j.cell.2024.10.027**, PMID 39532095.
 - Safieh et al., J Alzheimer's Disease (2024), DOI **10.3233/JAD-230514**, PMID 38217595.
 - Zhao et al., Neuron (2017), DOI **10.1016/j.neuron.2017.09.003**, PMID 28957663. Independent study using solid-phase ApoE3/ApoE4–insulin-receptor binding and an actual surface-biotinylation IR recycling chase in **primary mouse neurons**.
+- Asaro et al., Alzheimer's & Dementia (2020), DOI **10.1002/alz.12121**, PMID 32588544. CHO cells expressing murine sortilin: 60-minute cleavable biotin recycling assay with **49.56 ± 16.92%** ApoE4 vs **100 ± 13.84%** ApoE3, n=9 biological replicates from three experiments; first internalization not detectably different.
 
-Starting papers were traced through the official MecCog hypothesis page, backward citations and topical searches on ApoE4/Apoer2/LDLR receptor binding, recycling and receptor localisation. This 6-paper set is **not an exhaustive systematic review**, and no negative search claim is implied.
+Starting papers were traced through the official MecCog hypothesis page, backward citations and topical searches on ApoE4/Apoer2/LDLR receptor binding, recycling and receptor localisation. This 7-paper set is **not an exhaustive systematic review**, and no negative search claim is implied.
 
 ## 3. Full-text acquisition
 
@@ -51,14 +52,15 @@ Prior reproducible author-source calculations:
 - **Safieh Fig12B:** Apoer2 colocalisation means 0.44 vs 0.20 imply ~54.5% lower, while text states 38.8%; retain original values and note the unresolved difference, never invent reconciliation.
 - **Safieh Fig13B:** Apoer2 knockdown affects IR/VEGFR *localization*; neither a direct ApoE4-receptor affinity assay nor direct kinetic flux.
 - **Zhao Fig5A–B versus Fig S8B:** Binding of ApoE3/ApoE4 to purified insulin receptor and actual IR recycling after a pulse–chase were measured in different experimental setups. The kinetic assay used Apoe-null **mouse cortical neurons**; the data do not jointly establish tighter endosomal adhesion and impaired receptor recycling in endogenous human APOE4-genotype cells. Source narrative supplies neither a numeric pairwise P nor a confirmed n for the specific supplementary chase; they remain N/A.
+- **Asaro Fig5 and Fig6E:** CHO-S sortilin/ApoE endosomal compartment colocalization is not a Kd or off-rate. The observed 50.44% lower recycling from the ApoE3-normalized control is author source-reported, with P<0.05 and n=9 (three experiments). The CHO system is **not** a human brain cell, and the paper cites earlier literature for equal ApoE3/4 sortilin initial binding; this fact is not presented as an independent binding assay in Asaro.
 - Cell counts within preparations are **clustered**, not independent people or mice. Species, expression system, ligand lipidation, receptor type and assay context matter.
-- Quantitative and scientific review of every row remains in progress. Current draft spreadsheet contains 6 papers / 22 finding rows; **no MecCog submission has been made**.
+- Quantitative and scientific review of every row remains in progress. Current draft spreadsheet contains 7 papers / 25 finding rows; **no MecCog submission has been made**.
 
 ## 6. Rules, provenance, and competition protocol
 
 Use the official 19-column schema, paper row followed by P#.F# finding rows, source-provenance codes for effect size, P and sample count, and directness assessment separately per finding. Never infer P from plot geometry.
 
-The **official MecCog validator** must pass on the exact final XLSX with authentic Method URL and Git commit. This public page supplies a real, versioned method URL; a validator-compatible scratch copy of the earlier 20-finding worksheet returned only the missing-URL error before method publication. This is a method snapshot, not a submission or acceptance.
+The **official MecCog validator** must pass on the exact final XLSX with authentic Method URL and Git commit. Earlier 20- and 22-finding workbook content-equivalent validation copies passed strict official validator (0 warnings/errors), but this expanded 25-finding source-audit draft must be rechecked at the pinned new commit and independently reviewed. This is a method snapshot, not a submission or acceptance.
 
 Official: https://meccog-meccog-challenge.static.hf.space/rules.html
 
