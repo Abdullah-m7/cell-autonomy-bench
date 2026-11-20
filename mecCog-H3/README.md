@@ -59,6 +59,20 @@ Scripts (original source data downloaded separately from publisher, not committe
 
 **Necessary experiment to discriminate:** alter cell-surface ligand contact independently of internalized cargo and aggregate composition using calibrated extracellular tethering/noninternalizable presentation plus separate orthogonal uptake manipulation, while measuring early NF-κB/inflammasome signaling, receptor-specific binding, uptake-adjusted lysosomal degradation and toxicity **in the same isogenic human genetic backgrounds**. Surface and intracellular contributions may coexist. This experiment has NOT been executed. The Nobel-level causal mechanism remains a research ambition, not a discovery. **No MecCog workbook row was added based solely on these posthoc ratios or model coefficients.**
 
+## Separate Aβ fibrillation kinetic reanalysis (21 November 2026; not direct H3 evidence)
+
+The original publisher author XLSX `41467_2024_49028_MOESM4_ESM.xlsx` (SHA256 `47d9439f523f58c2e075e0dd853220da9b7971fa3541cfc675913c88db86617e`) includes **241 serial Thioflavin-T fluorescence points per condition** in sheet `Figure 1A`. Source-locked posthoc analysis `mecCog-H3/audit_xia2024_ThT_kinetics.py` calculated dynamic fluorescence time-to-half-maximum using median early baseline and late plateau, sustained threshold crossings and time interpolation (alternative baseline/plateau sensitivity also run).
+
+| Cell-free Aβ42 reaction | t50 (minutes) | Comparator |
+|---|---:|---|
+| Aβ42 alone | 26.29 | — |
+| Aβ42 + **lipidated ApoE3** | 18.93 | — |
+| Aβ42 + **lipidated ApoE4** | 22.77 | E4–E3 **+3.84 min** |
+| Aβ42 + **nonlipidated ApoE3** | 47.29 | — |
+| Aβ42 + **nonlipidated ApoE4** | 45.58 | E4–E3 **−1.71 min** |
+
+The opposite sign of the E4–E3 timing difference under different lipidation conditions was retained with an alternative 20%-terminal/8-point-baseline definition (≈+3.81 and −1.53 minutes). This is **descriptive reanalysis of the authors' original extracellular Aβ fibrillization measurements**, not a new biological experiment. Figure 1A in the paper reports n=3 independent experiments but the provided worksheet has **one aggregated trace per condition**; **the 241 clock-time measurements are not 241 independent replicates**, so no p-value/CI is derived. Most importantly, **ThT is a probe of Aβ fibrillation, NOT de novo APOE4 endolysosomal aggregation**; this does not justify reclassifying H3 findings as direct. It motivates measuring both biological *aggregation maturity* and *clock time* when comparing isoform effects on glial cargo uptake and cytokines, ideally in matched donor/cargo conditions.
+
 ## Official template and coding
 
 - File uses **19 columns** in the challenge's exact order; P1–P5 paper rows and sequential P#.F# rows. Preserve full exact H3 statement in cell A2.
