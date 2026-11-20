@@ -83,9 +83,26 @@
       ],
       "system": "N2a neuroblastoma uptake and APP/PS1 primary mouse neuron conditioned media",
       "specificity_limit": "Uptake, puncta, APP βCTF/Aβ antibody overlap not APOE aggregate proof"
+    },
+    {
+      "id": "P6",
+      "doi": "10.1038/s41467-024-49028-z",
+      "pmid": "38824138",
+      "pmcid": "PMC11144216",
+      "source_type": "PubMed published",
+      "author": "Xia et al. 2024 Nature Communications",
+      "n_findings": 3,
+      "primary_figures": [
+        "1G-H",
+        "4D-E"
+      ],
+      "source_data": "41467_2024_49028_MOESM4_ESM.xlsx (Fig.1G-I and Fig. 4 tabs)",
+      "source_data_sha256": "47d9439f523f58c2e075e0dd853220da9b7971fa3541cfc675913c88db86617e",
+      "systems": "cell-free Aβ/apoE co-aggregation; human iPSC-derived microglia-like cells and human iNPC-derived astrocytes exposed to preformed non-lipidated apoE-Aβ co-aggregates",
+      "caveat": "No endogenous intralysosomal ApoE4 aggregation is measured. Source row 3 mislabels lipidated-condition isoforms (two ApoE3 and no ApoE4); no lipidated E3-vs-E4 pairwise numeric result was used. Three biological replicates are not independent human parental donors. Report author p/n only when exact source supports."
     }
   ],
-  "total_findings": 17,
+  "total_findings": 20,
   "methodology": "Primary published panel-specific evidence extraction; explicit N/A for missing p/n; Class5 when complete H3 compartment+human+aggregation chain not measured",
   "who_did_work": "both",
   "model": "GPT-6 (ChatGPT)",
@@ -95,5 +112,6 @@
   "links": [
     "https://meccog-meccog-challenge.static.hf.space/rules.html",
     "https://meccog-meccog-challenge.static.hf.space/hypotheses.html"
-  ]
+  ],
+  "strongest_gap": "No paper here simultaneously demonstrates de-novo APOE4-vs-APOE3 endolysosomal aggregation in non-aged non-Alzheimer human isogenic brain cells."
 }
