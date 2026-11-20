@@ -1,0 +1,99 @@
+{
+  "name": "Mechanism Atlas H3 Step 1 bibliography",
+  "date": "2026-11-20",
+  "status": "source-curation draft NOT submitted",
+  "exact_hypothesis": "In some types of non-Alzheimer's, non-aged human brain cells, APOE4 undergoes increased aggregation in the endo-lysosome compared with APOE3.",
+  "studies": [
+    {
+      "id": "P1",
+      "doi": "10.1016/j.immuni.2024.09.014",
+      "pmid": "39419029",
+      "source_type": "PubMed published",
+      "author": "Kaji 2024",
+      "n_findings": 5,
+      "primary_figures": [
+        "3D-E",
+        "3F-G",
+        "S4G-H",
+        "4A-B",
+        "5A-D"
+      ],
+      "system": "recombinant purified ApoE and mouse amyloid pathology; some human AD autopsies",
+      "specificity_limit": "Purified isoform aggregation contrast not a living human endolysosomal observation; ApoE-Halo 5xFAD mouse study not human APOE3/4 comparison",
+      "erratum_doi": "10.1016/j.immuni.2024.11.024"
+    },
+    {
+      "id": "P2",
+      "doi": "10.1523/JNEUROSCI.1400-19.2019",
+      "pmid": "31641056",
+      "source_type": "PubMed published",
+      "author": "Rawat 2019",
+      "n_findings": 5,
+      "primary_figures": [
+        "4D-E",
+        "4F-G",
+        "4H-I",
+        "4J-K",
+        "8D-E"
+      ],
+      "system": "mouse primary astrocytes, mouse hippocampus, human CSF and cell-free assay",
+      "specificity_limit": "Insoluble fraction ≠ proven fibril in healthy human brain-cell endosome"
+    },
+    {
+      "id": "P3",
+      "doi": "10.1016/j.jmb.2006.06.080",
+      "pmid": "16890957",
+      "source_type": "PubMed published",
+      "author": "Hatters 2006",
+      "n_findings": 2,
+      "primary_figures": [
+        "biochemical kinetics",
+        "N-terminal stability mutations"
+      ],
+      "system": "cell-free purified ApoE and neuron-like cultures",
+      "specificity_limit": "No endolysosomal localization in intact human brain cells"
+    },
+    {
+      "id": "P4",
+      "doi": "10.1242/jcs.258687",
+      "pmid": "34982109",
+      "pmcid": "PMC8917355",
+      "source_type": "PubMed published",
+      "author": "Fote 2022",
+      "n_findings": 2,
+      "primary_figures": [
+        "1",
+        "2"
+      ],
+      "system": "HEK293 stably expressing ApoE3 or ApoE4, other engineered cells",
+      "specificity_limit": "Accumulation and flux changes do not prove isoform-specific ApoE fibrillar aggregation"
+    },
+    {
+      "id": "P5",
+      "doi": "10.26508/lsa.202201887",
+      "pmid": "37290814",
+      "pmcid": "PMC10250689",
+      "source_type": "PubMed published",
+      "author": "Konings 2023",
+      "n_findings": 3,
+      "primary_figures": [
+        "1B-D",
+        "1G-J",
+        "4H-J"
+      ],
+      "system": "N2a neuroblastoma uptake and APP/PS1 primary mouse neuron conditioned media",
+      "specificity_limit": "Uptake, puncta, APP βCTF/Aβ antibody overlap not APOE aggregate proof"
+    }
+  ],
+  "total_findings": 17,
+  "methodology": "Primary published panel-specific evidence extraction; explicit N/A for missing p/n; Class5 when complete H3 compartment+human+aggregation chain not measured",
+  "who_did_work": "both",
+  "model": "GPT-6 (ChatGPT)",
+  "independent_human_expert_validation": false,
+  "experimental_biology_by_team": false,
+  "submission_sent": false,
+  "links": [
+    "https://meccog-meccog-challenge.static.hf.space/rules.html",
+    "https://meccog-meccog-challenge.static.hf.space/hypotheses.html"
+  ]
+}
