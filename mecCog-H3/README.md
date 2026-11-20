@@ -8,6 +8,8 @@
 
 The full statement has **four conditions**: APOE4 vs APOE3, **protein aggregation** (not simply intracellular protein abundance/puncta or co-localization), **endo-lysosomal compartment**, and **non-Alzheimer's, non-aged human brain cells**. Most available assays prove only some conditions, so all H3 evidence is provisionally graded cautiously, often `Class 5 Other`, rather than presented as a direct human-brain-cell mechanism.
 
+**Correction check completed:** Kaji et al. issued a 2025 erratum (DOI `10.1016/j.immuni.2024.11.024`) changing Figure 5C TREM2KO quantitative graph and relabeling Figure 7B from IBA1 and MX04 aggregates to LAMP1-positive, APOE+/Aβ42+ lysosomes. See [the audited corrigendum](ERRATUM_KAJI_2024.md). The draft P1.F1–P1.F5 do **not** transcribe uncorrected Figure 5C numbers or claim Fig7B is a genotype-specific aggregate quantification. Lysosomal dual-positive cargo must not be described as a direct fibrillar APOE aggregate count.
+
 ## Five selected primary papers (17 findings)
 
 | ID | Primary paper | Context and scientific limitation |
