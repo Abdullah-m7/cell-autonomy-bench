@@ -10,7 +10,7 @@ The full statement has **four conditions**: APOE4 vs APOE3, **protein aggregatio
 
 **Correction check completed:** Kaji et al. issued a 2025 erratum (DOI `10.1016/j.immuni.2024.11.024`) changing Figure 5C TREM2KO quantitative graph and relabeling Figure 7B from IBA1 and MX04 aggregates to LAMP1-positive, APOE+/Aβ42+ lysosomes. See [the audited corrigendum](ERRATUM_KAJI_2024.md). The draft P1.F1–P1.F5 do **not** transcribe uncorrected Figure 5C numbers or claim Fig7B is a genotype-specific aggregate quantification. Lysosomal dual-positive cargo must not be described as a direct fibrillar APOE aggregate count.
 
-## Five selected primary papers (17 findings)
+## Six selected primary papers (20 findings)
 
 | ID | Primary paper | Context and scientific limitation |
 |---|---|---|
@@ -20,7 +20,23 @@ The full statement has **four conditions**: APOE4 vs APOE3, **protein aggregatio
 | P4 | Fote et al., *J Cell Sci* 2022, [DOI 10.1242/jcs.258687](https://doi.org/10.1242/jcs.258687), PMID **34982109**, [PMCID PMC8917355](https://pmc.ncbi.nlm.nih.gov/articles/PMC8917355/) | Two findings: APOE4 accumulates in enlarged late endosomes/lysosomes of **HEK293 or other engineered cell lines**; LC3-II/autophagy flux altered. These assays show **retention and degradative handling, not proven molecular aggregation**. Cell type and organellar context make them Class 5 contextual relative to exact H3. |
 | P5 | Konings et al., *Life Science Alliance* 2023, [DOI 10.26508/lsa.202201887](https://doi.org/10.26508/lsa.202201887), PMID **37290814**, [PMCID PMC10250689](https://pmc.ncbi.nlm.nih.gov/articles/PMC10250689/) | Three findings: 4h N2a uptake of recombinant APOE4 > APOE3 (33.3% vs 23.0% of cells, p=0.024), **not an aggregation measurement**; ApoE-LAMP1 colocalization is **not greater** for E4 (36% E3, 30% E4; p=0.2744); ApoE overlap with APP-processing products in primary **APP/PS1 transgenic mouse neurons** similar for E3/E4 (7.3%/8.1%, p=0.6382). The 82e1 antibody recognizes both Aβ and APP-βCTF, so co-localization is neither direct Aβ binding nor APOE aggregation. |
 
+| P6 | Xia et al., *Nature Communications* 2024, [DOI 10.1038/s41467-024-49028-z](https://doi.org/10.1038/s41467-024-49028-z), PMID **38824138**, [PMCID PMC11144216](https://pmc.ncbi.nlm.nih.gov/articles/PMC11144216/) | Three additional findings. Cell-free early apoE–Aβ coaggregation was **not significantly isoform dependent** by Figure 1G–H. Human microglia-like and human astrocyte-like cells exposed to **exogenously prepared non-lipidated ApoE3/Aβ vs ApoE4/Aβ** early coaggregates showed source Fig 4 uptake ratios E4/E3≈0.5375 (**46.2% lower microglia**) and ≈0.7764 (**22.4% lower astrocytes**), 3 biological replicates/cell model. **Neither result establishes endogenous APOE4 endolysosomal fibrillation or an intrinsically APOE4/4 genotype.** |
+
 This is a **selected primary-source audit**, NOT exhaustive global systematic review. Older studies and new manuscripts may alter which comparator assays best test H3. We deliberately retain results **against** the simplistic idea "more puncta = greater aggregation."
+
+
+## Author-supplied Xia 2024 Fig 4 numerical audit — source-label NO-GO
+
+The original publisher [author source Excel](https://static-content.springer.com/esm/art%3A10.1038%2Fs41467-024-49028-z/MediaObjects/41467_2024_49028_MOESM4_ESM.xlsx) was downloaded, SHA256 `47d9439f523f58c2e075e0dd853220da9b7971fa3541cfc675913c88db86617e`. It has 18 sheets. A source parser and reproducible posthoc calculation are in `mecCog-H3/audit_xia2024_fig4_source.py`. The `Fig. 4` sheet has three normalized culture values per condition (microglia rows 4–6, astrocytes rows 8–10), as the paper's Figure 4 legend states.
+
+**Unambiguous source comparisons (row 2 header “Non-lipidated apoE”, row 3 condition label ApoE3 vs ApoE4 at t1)**:
+- human iPSC microglia-like cells, ApoE3 values 2.59574/2.35268/2.81699, ApoE4 1.33511/1.10714/1.73203. Means 2.588470 vs 1.391427; E4/E3 ratio 0.53755 or 46.25% lower uptake.
+- human astrocyte-like cells, ApoE3 0.70455/0.80086/0.78555, ApoE4 0.55785/0.58458/0.63636. Means 0.763653 vs 0.592930; E4/E3 ratio 0.77644 or 22.36% lower uptake.
+- Exploratory unpaired exact culture-label permutations of three E3 versus three E4 readings yield **two-sided p=0.10 for each** (20 possible labels); this is **our posthoc sensitivity calculation**, NOT the authors' p-value, not adjusted for testing, and assumes exchangeability despite possible same-batch structure. Thus the spreadsheet leaves published p as `N/A` rather than falsely reporting our exploratory p as author statistics.
+
+**Source ambiguity requiring suspension, not guesswork:** in the Fig 4 source workbook, the row-2 `Lipidated apoE` section has two t1 columns labelled `apoE3` and **no unique apoE4 t1 column** in row 3, alongside other duplicated t3 labels. These appear to be source-label discrepancies, but a putative ApoE4 column was **NOT assigned or used** in our numeric genotype/isoform comparison. Consequently the script emits `NO_GO` for the lipidated E3-vs-E4 numeric result pending published legend/author clarification. The paper's original statement that lipidation improves coaggregate uptake is separate evidence, not license to fabricate a numeric ApoE4 source mapping.
+
+**Key mechanistic separation:** in this study differences in **entry/clearance** of preformed mixed ApoE–Aβ coaggregates should not be misnamed differences in ApoE4 **de novo aggregation** in lysosomes. This distinction is critical for MecCog's highly qualified H3 statement.
 
 ## Official template and coding
 
