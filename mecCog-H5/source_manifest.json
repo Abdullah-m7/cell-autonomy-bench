@@ -1,0 +1,92 @@
+{
+  "project": "Mechanism Atlas",
+  "scope": "MecCog Step1 H5 published and preprint primary-evidence extraction",
+  "status": "PUBLIC_METHOD_ONLY_NOT_SUBMITTED",
+  "generated": "2026-11-20",
+  "type_of_work": "both",
+  "method_model": "OpenAI GPT-6 (ChatGPT), researcher-directed",
+  "hypothesis": "In some types of non-Alzheimer's, non-aged human brain cells, APOE4 disruption of lipid metabolism, compared with APOE3, results in impaired late endosome/lysosome function.",
+  "source_papers": [
+    {
+      "id": "P1",
+      "doi": "10.1016/j.celrep.2023.113183",
+      "pmid": "37777962",
+      "source_type": "PubMed published",
+      "figures": [
+        "3L-O",
+        "4A-C",
+        "4D-F",
+        "5A-D",
+        "5K-O"
+      ],
+      "finding_count": 4,
+      "model": "isogenic human iPSC astrocytes",
+      "warnings": [
+        "cholesterol depletion treatment includes time/dose conditions; mitochondrial respiration is not lysosomal flux"
+      ]
+    },
+    {
+      "id": "P2",
+      "doi": "10.1016/j.cell.2022.05.017",
+      "pmid": "35750033",
+      "pmcid": "PMC9340815",
+      "source_type": "PubMed published",
+      "figures": [
+        "6H",
+        "6I"
+      ],
+      "finding_count": 2,
+      "model": "human isogenic astrocyte lines",
+      "warnings": [
+        "APOE secretion is context and not a direct lysosomal hydrolysis assay"
+      ]
+    },
+    {
+      "id": "P3",
+      "doi": "10.64898/2026.05.12.724612",
+      "pmid": "42182449",
+      "pmcid": "PMC13192593",
+      "source_type": "PubMed preprint",
+      "figures": [
+        "3B-C",
+        "3G",
+        "3H",
+        "7M"
+      ],
+      "finding_count": 5,
+      "model": "human isogenic iPSC microglia KOLF and UCI5",
+      "warnings": [
+        "BIO RXIV PREPRINT NOT PEER REVIEWED",
+        "wells/frames are nested, not independent donor lines",
+        "baseline pH null retained",
+        "late endo/lysosome pH not early endosome"
+      ]
+    },
+    {
+      "id": "P4",
+      "doi": "10.1186/s12974-025-03470-y",
+      "pmid": "40457456",
+      "pmcid": "PMC12131611",
+      "source_type": "PubMed published",
+      "figures": [
+        "4F-H"
+      ],
+      "finding_count": 1,
+      "model": "human iPSC microglia donor-derived",
+      "warnings": [
+        "figure lipid mediation untested, contextual evidence only",
+        "no invented p/n"
+      ]
+    }
+  ],
+  "count_findings": 12,
+  "official_schema_columns": 19,
+  "methods": {
+    "figure_level_source_check": true,
+    "source_statistics_only": true,
+    "record_nulls": true,
+    "source_urls": true,
+    "full_wet_lab_replication": false,
+    "independent_expert_signoff": false
+  }
+}
