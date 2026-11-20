@@ -38,6 +38,27 @@ The original publisher [author source Excel](https://static-content.springer.com
 
 **Key mechanistic separation:** in this study differences in **entry/clearance** of preformed mixed ApoE–Aβ coaggregates should not be misnamed differences in ApoE4 **de novo aggregation** in lysosomes. This distinction is critical for MecCog's highly qualified H3 statement.
 
+## Xia Figure 7 HAE-4 intervention: a second causal interpretation survives (21 November 2026)
+
+This is **author-published 2024 data**, reanalyzed after inspecting the paper, **not a new intervention or blinded validation**. Source spreadsheet `41467_2024_49028_MOESM4_ESM.xlsx`, SHA256 `47d9439f523f58c2e075e0dd853220da9b7971fa3541cfc675913c88db86617e`, original Fig 7 C–L, 3 source biological replicates per comparison. The HAE-4 antibody **immunodepletes extracellular early nonlipidated ApoE4–Aβ coaggregates before cell exposure**; it is **not an intracellular or surface-receptor inhibitor**.
+
+Relative to isotype immunoprecipitation control, HAE-4 removal reduced fluorescent cargo uptake and secreted cytokines, respectively:
+
+| Recipient culture | Uptake decrease | MCP-1 decrease | IL-1β decrease | IL-6 decrease | TNF-α decrease |
+|---|---:|---:|---:|---:|---:|
+| Human iPSC microglia-like | 32.2% | 19.6% | 23.2% | 20.2% | 28.7% |
+| Human astrocyte-like | 44.4% | 17.4% | 22.6% | 21.5% | 18.5% |
+
+All ten group contrasts are descriptive source-value ratios. A posthoc exact unpaired 3-versus-3 label permutation has minimum two-sided p=0.10, which is what the audit returned; **do not present this as the authors' published test**.
+
+**Crucial red-team test:** A decrease in cytokine output **smaller** than the decrease in uptake for 8/8 markers might seem to imply a surface-proximal inflammatory signal. We tested the less exciting explanation first. For each marker/cell model, an affine uptake-proxy-only relation `Y = a + b U` was fitted to the two group means (isotype, HAE-4) and then used to predict the third unprocessed ApoE4–Aβ source arm. The **median absolute relative prediction error was 3.44%**, max **6.53%**. **7/8** predictions differed from their original unprocessed-arm mean by no more than **one source culture SD**, and all fitted intercepts and slopes were nonnegative. This means this small three-arm dataset **does not require invoking an additional surface-sensing mechanism**; it does **not prove** uptake causes the cytokines. The fit used two points for two parameters (zero model-fitting degrees of freedom), with only one third-arm group-mean check. Data are unpaired across assay types and ligand composition changes after HAE-4 depletion, preventing causal mediation or instrumental-variable analysis.
+
+Scripts (original source data downloaded separately from publisher, not committed to repo):
+- `mecCog-H3/audit_xia2024_HAE4_immunodepletion.py` — verifies exact author source checksum, group labels, 10 isotype comparisons, original source triplicate records and descriptive p.
+- `mecCog-H3/run_hae4_three_arm_uptake_model.py` — checks whether original untreated mixture cytokine means are predictable from the two HAE-4/isotype mean points.
+
+**Necessary experiment to discriminate:** alter cell-surface ligand contact independently of internalized cargo and aggregate composition using calibrated extracellular tethering/noninternalizable presentation plus separate orthogonal uptake manipulation, while measuring early NF-κB/inflammasome signaling, receptor-specific binding, uptake-adjusted lysosomal degradation and toxicity **in the same isogenic human genetic backgrounds**. Surface and intracellular contributions may coexist. This experiment has NOT been executed. The Nobel-level causal mechanism remains a research ambition, not a discovery. **No MecCog workbook row was added based solely on these posthoc ratios or model coefficients.**
+
 ## Official template and coding
 
 - File uses **19 columns** in the challenge's exact order; P1–P5 paper rows and sequential P#.F# rows. Preserve full exact H3 statement in cell A2.
