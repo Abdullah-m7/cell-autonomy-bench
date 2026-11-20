@@ -15,15 +15,16 @@ The researcher and GPT-6 reviewed primary text, figures and supplementary source
 
 ## 2. Sources and search
 
-Five source studies in the current *draft* H4 spreadsheet:
+Six source studies in the current *draft* H4 spreadsheet:
 
 - Xian et al., eLife (2018), DOI **10.7554/eLife.40048**, PMID 30375977.
 - Chen et al., PNAS (2010), DOI **10.1073/pnas.0914984107**, PMID 20547867.
 - Pohlkamp et al., eLife (2021), DOI **10.7554/eLife.72034**, PMID 34617884. This overlaps the Xian investigator network; **not independent-laboratory replication**.
 - Guo et al., Cell (online 2024, journal issue 2025), DOI **10.1016/j.cell.2024.10.027**, PMID 39532095.
 - Safieh et al., J Alzheimer's Disease (2024), DOI **10.3233/JAD-230514**, PMID 38217595.
+- Zhao et al., Neuron (2017), DOI **10.1016/j.neuron.2017.09.003**, PMID 28957663. Independent study using solid-phase ApoE3/ApoE4–insulin-receptor binding and an actual surface-biotinylation IR recycling chase in **primary mouse neurons**.
 
-Starting papers were traced through the official MecCog hypothesis page, backward citations and topical searches on ApoE4/Apoer2/LDLR receptor binding, recycling and receptor localisation. This 5-paper set is **not an exhaustive systematic review**, and no negative search claim is implied.
+Starting papers were traced through the official MecCog hypothesis page, backward citations and topical searches on ApoE4/Apoer2/LDLR receptor binding, recycling and receptor localisation. This 6-paper set is **not an exhaustive systematic review**, and no negative search claim is implied.
 
 ## 3. Full-text acquisition
 
@@ -49,8 +50,9 @@ Prior reproducible author-source calculations:
 - **Safieh Fig8:** caption and results text differ for late-endosomal LRP1 significance; use conservative `p<0.01` where defensible.
 - **Safieh Fig12B:** Apoer2 colocalisation means 0.44 vs 0.20 imply ~54.5% lower, while text states 38.8%; retain original values and note the unresolved difference, never invent reconciliation.
 - **Safieh Fig13B:** Apoer2 knockdown affects IR/VEGFR *localization*; neither a direct ApoE4-receptor affinity assay nor direct kinetic flux.
+- **Zhao Fig5A–B versus Fig S8B:** Binding of ApoE3/ApoE4 to purified insulin receptor and actual IR recycling after a pulse–chase were measured in different experimental setups. The kinetic assay used Apoe-null **mouse cortical neurons**; the data do not jointly establish tighter endosomal adhesion and impaired receptor recycling in endogenous human APOE4-genotype cells. Source narrative supplies neither a numeric pairwise P nor a confirmed n for the specific supplementary chase; they remain N/A.
 - Cell counts within preparations are **clustered**, not independent people or mice. Species, expression system, ligand lipidation, receptor type and assay context matter.
-- Quantitative and scientific review of every row remains in progress. Current draft spreadsheet contains 5 papers / 20 finding rows; **no MecCog submission has been made**.
+- Quantitative and scientific review of every row remains in progress. Current draft spreadsheet contains 6 papers / 22 finding rows; **no MecCog submission has been made**.
 
 ## 6. Rules, provenance, and competition protocol
 
