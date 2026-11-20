@@ -97,3 +97,35 @@ Use sham treatment controls, fluorescent label stability controls, cell-free pla
 A collaboration brief should request **one jointly specified pilot**, not claim a Nobel discovery, grant award, therapeutic promise, or guaranteed authorship. Contribution and authorship should be agreed based on actual intellectual and experimental work. A single academic collaboration can test feasibility before pursuing funding.
 
 **Competing priority:** MecCog's five source-evidence workbooks remain separate, all formal validators passed in earlier work and none officially submitted. This branch is the longer-term original-research programme, not a sixth source-evidence submission.
+
+## 21 November 2026: frozen source-gene falsification gate — **negative result, not discovery**
+
+**Public original author data and code:** [Karabova et al. 2026, DOI 10.1002/alz.71337](https://doi.org/10.1002/alz.71337), [GEO GSE291195](https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE291195), [authors' DESeq2 code & output](https://github.com/S-Washer/Karabova_2025_Tracking_tau_and_cellular_responses_in_microglia_RNAseq/tree/main/DESeq2%20Output).
+
+A panel of **21 genes was frozen before reading the author numerical results**, including **18 source-selected cargo sorting/lysosomal/EV/apoE signalling genes** plus **three previously published inflammatory controls** (`CCL2`, `CXCL5`, `P2RY12`). Author code confirms that `Recombinant_monovsfib.csv` is **fibrils minus monomers** (not vice versa); `Recombinant_ctrlvsmonomer.csv` and `Recombinant_ctrlvsfibril.csv` encode monomer/fibril **minus** control. Author files use independent `apeglm` log2FC shrinkage, so different shrunken LFC contrasts are **not algebraically additive**.
+
+**Original-source results, threshold frozen as genome-wide adjusted p < 0.05, abs(author-shrunken log2FC) ≥ 0.5, baseMean ≥ 10:**
+
+| Set | Fibril minus monomer genes meeting effect+FDR gate |
+|---|---|
+| LRP1/recycling (7 genes) | **0 of 7** |
+| Late lysosome (6 genes) | **0 of 6** |
+| EV secretion (3 genes) | **0 of 3** |
+| APOE signalling (2 genes) | **0 of 2** |
+| Known inflammatory controls (3 genes) | **3 of 3**: CCL2 +0.951 (FDR .00374), CXCL5 +1.077 (FDR .00757), P2RY12 −0.714 (FDR 2.22e−17) |
+
+Examples: LRP1 −0.0007 (FDR .994), RAB11A −0.0087 (.935), RAB7A −0.0403 (.540), TBC1D5 −0.1397 (.108). **PICALM −0.1442 has FDR .0451**, an author-significant *small* effect not meeting the pre-frozen effect threshold; do not call it an unchanged transcript.
+
+**Global control of interpretive strength:** From **15,132 genes**, the author's same criterion yields **5** large differential genes for monomer vs vehicle, **183** for fibril vs vehicle, and **58** for fibril vs monomer. The first two replicate the published paper's stated 5 and 183, validating contrast orientation/threshold arithmetic. Because only 58/15,132 genes differ strongly between fibrils and monomers, **0/18 core sorting genes is not surprising and is not evidence that a specific post-transcriptional 'switch' exists**. It tells us only where this *particular RNA-first screen* did **not** find a justified target.
+
+**Study design limit:** one iPSC parental line `SFC_856-03-06`, with control n3 cultures, tau monomer n4, tau fibril n4 (24h exposure at 1 µg/mL), *not* independent donors or matched APOE3/4 allele pairs. Author transcriptome measures **responses to tau challenge**, not intact tau re-release or proteolytic clearance. No source phosphosite table was numerically verified in this audit: publisher supplement downloads required an interstitial access process; phosphosites the authors already discussed (RAB10/RILP/BIN1/MTOR/ULK1) are **prior art**, not discoveries by our team.
+
+**Reproduce the result without re-running DESeq2:** Download four exact author CSVs and the author `phenofile.csv` in the same folder; run:
+```bash
+python3 audit_Karabova2026_author_DESeq2_selected_panel.py
+python3 audit_Karabova2026_threshold_sensitivity.py
+```
+The scripts enforce **SHA256** on each author source, carry a priori panel definitions and save all results, including nonsignificant genes. The selected-panel derived 21-row table is `Karabova2026_TauSource_FrozenGenePanel_20261121.csv`.
+
+**Decision, not marketing:** Do **not** prioritize one RAB/ARF sorting protein just because of this RNA study. First reconcile early re-release versus late degradation with the same donor, same tau lot, same sample stripping and direct intact/fragments mass balance. Only if a true post-entry fate phenotype survives do site-resolved phosphoproteomics and selective, rescue-controlled perturbations become interpretable.
+
