@@ -77,9 +77,33 @@
         "figure lipid mediation untested, contextual evidence only",
         "no invented p/n"
       ]
+    },
+    {
+      "id": "P5",
+      "doi": "10.1016/j.stem.2026.08.001",
+      "pmid": "42636814",
+      "pmcid": "PMC13528747",
+      "source_type": "PubMed published",
+      "figures": [
+        "5a",
+        "4d",
+        "5b",
+        "S5c"
+      ],
+      "finding_count": 7,
+      "model": "human APOE3/APOE4 isogenic iPSC-derived astrocytes, two distinct parental donor genetic backgrounds",
+      "warnings": [
+        "Earlier same-study preprint is not counted as a second independent study",
+        "BODIPY-cholesterol is an upstream lipid endpoint, not lysosomal flux",
+        "DQ-BSA is a cleavage proxy; uptake and organelle number can affect signal",
+        "MβCD acts on membrane cholesterol and potentially other pathways",
+        "Individual donor and treatment p values belong to distinct rows",
+        "Supplementary second-donor n not independently confirmed; set N/A",
+        "Several non-cyclodextrin agents had neutral or negative rescue outcomes; individual p values not available"
+      ]
     }
   ],
-  "count_findings": 12,
+  "count_findings": 19,
   "official_schema_columns": 19,
   "methods": {
     "figure_level_source_check": true,
