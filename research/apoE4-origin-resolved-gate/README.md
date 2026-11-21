@@ -60,6 +60,19 @@ Under **these artificial two rate sets**, the absolute monomer difference `|100*
 
 Executable code: [optimal monomer measurement](optimal_monomer_measurement.py). The important general result is that **an orthogonal monomeric intact-ApoE measurement and measured degradation/exit mass break this particular symmetry**, while extra images of aggregate-only fluorescence do not.
 
+### Measurement-noise sensitivity — this is not an optimal 4-hour claim
+
+The analytic ~4.05-hour maximizer above **assumes constant absolute measurement error**. Under an explicitly **different** toy error model, each monomer readout has independent variance \(σ0²+(CV·M)²\). Maximizing the standardized separation of the same **two hypothetical kinetic rate sets** over 0–24 hours produces:
+
+| Assumed monomer instrument error | Best toy checkpoint | Standardized difference (peak) |
+|---|---:|---:|
+| Constant absolute SD=3, CV=0% | **4.05h** | 3.492 |
+| Absolute SD floor=2, CV=10% | **7.12h** | 3.146 |
+| Absolute SD floor=3, CV=20% | **7.87h** | 1.814 |
+| Absolute SD floor=1, CV=5% | **7.12h** | 6.292 |
+
+This standardized score is a **design contrast, not a biological test statistic or claim of clinical/experimental power**. The optimum is **noise-model-dependent** and may change further with limits of detection, actual rates, cell heterogeneity, uptake errors, lysosomal losses, and reporter pH sensitivity. We therefore propose pilot samples near 0,1,4,8 and 24h and a locked confirmatory schedule based on real assay variance. The code [noise sensitivity](monomer_measurement_noise_sensitivity.py) reads the prior source-locked synthetic result and reproduces these values on the Mac. Its JSON SHA256 is `43492cd6be03e84828a3a003ac2a2522dbed46a5087cdf21ca83a9c763081bf4`.
+
 ### Source-data sufficiency: why we have NOT claimed a real kinetic estimate
 
 | Existing curated source | What is actually measured | Missing to identify new ApoE assembly and clearance |
