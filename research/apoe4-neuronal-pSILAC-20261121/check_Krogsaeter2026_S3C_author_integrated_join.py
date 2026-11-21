@@ -3,7 +3,7 @@
 from pathlib import Path
 import openpyxl,hashlib,math,statistics,json
 from collections import defaultdict
-D=Path.home()/'Research/Mechanism_Atlas_H2/h3_aggregation_20261120'
+D=Path(__file__).resolve().parent
 S3=D/'Krogsaeter2026_Abundance_S3_original.xlsx'
 PLAN=D/'FROZEN_KROGSAETER_S3C_INTEGRATED_CHECK_20261121.md'
 OUT=D/'Krogsaeter2026_S3C_integrated_source_crosscheck_20261121.json'
