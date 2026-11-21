@@ -84,6 +84,10 @@ This standardized score is a **design contrast, not a biological test statistic 
 
 **This is a screened set of four relevant public sources, not a systematic proof that no such dataset exists anywhere.** Continue source search and seek experimental collaborators. Do not fit the H3 ApoE formation-vs-clearance model to an *Aβ reporter* and call the parameters biological ApoE rates. No new human wet-lab experiment has occurred.
 
+### Independent clean-room code reproduction (21 Nov 2026)
+
+We fetched the **four exact source text files** (the frozen protocol and three scripts) from immutable GitHub commit `63a7b76493ce2a369cb6005bccb9cd5764edbab6` into a **new empty directory** on the authorized Mac and ran all three scripts sequentially under Python without third-party packages. All three returned **exit 0**, and the test suite confirmed 250 admissible parameter symmetries, the 4.05h checkpoint, and the 7.12h time under a 10% CV noise model. The JSON output files include a run timestamp, so their SHA256 values differ across runs despite identical numerical checks. This establishes **computational reproducibility only**, not a replicated human cell experiment.
+
 ## Competition and collaboration boundary
 MecCog H3 (existing 6-paper/20-finding and 7-paper/22-finding candidate workbooks) **still lacks a published finding measuring all components of direct de novo ApoE4 endolysosomal aggregation in eligible human cells**. This model is a research-design instrument and **must not** be inserted into Step 1 as a source experimental finding. No MecCog entry has been uploaded.
 
