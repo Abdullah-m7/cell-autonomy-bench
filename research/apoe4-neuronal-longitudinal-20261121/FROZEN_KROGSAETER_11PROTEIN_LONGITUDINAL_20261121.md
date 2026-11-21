@@ -1,0 +1,12 @@
+# Krogsaeter longitudinal protein source S7: frozen target plan before S7 protein-specific numeric inspection
+Date 2026-11-21. POSTHOC study selection and target pathway selection based on previous S2-S6 analyses; NOT independent blind discovery.
+Study: Krogsaeter et al bioRxiv PREPRINT 2026 DOI 10.64898/2026.07.15.738801. Source original S7 XLSX sha256 4c5362260d2e8d0c12af0bf069889358b0e793579b14d4ccf8d2125efbb4cb2c.
+S7A: unnormalized Log2 protein intensities, S7B: PPIA/GAPDH-normalized Log2 protein intensities, covering DIV0 DIV7 DIV14 DIV21 DIV28 DIV35 DIV42 DIV49 APOE3 and APOE4 differentiated human iPSC neuronal cultures from same parental genotype background. Data are not clinical donors.
+
+PRESELECTED EXACT UniProt base accession panel before numeric rows inspection:
+APOE P02649, MAPT P10636, APP P05067, CLU P10909, SNX27 Q96L92, LAMP1 P11279, RAB7A P51149, CAPZA2 P47755, PSME1 Q06323, CTSD P07339, GAPDH P04406.
+Do not choose posthoc additional proteins. Match exact semicolon-delimited UniProt token, optionally gene-isoform token suffix -number for a base accession, but record ANY multiple protein-group matches as ambiguous and NEVER average them into one source-independent protein. The same row index must mean same Protein group in S7A and S7B.
+For every gene with exactly one group: each day compute E3 and E4 source log2 intensity mean/median and finite numeric n, compute E4 minus E3 mean log2FC and source normalized vs unnormalized direction comparison. No p or false precision and NO imputation of missing values; only call comparison if n>=3 per genotype. DIV49 likely n2 E3 and n4 E4, so mark insufficient and do not claim statistically robust day49.
+Prospective-like exploratory (but scientifically posthoc relative to previous papers) threshold: absolute E4-E3 mean difference >= 0.5 log2 units at TWO consecutive eligible days in S7B AND same sign in S7A; otherwise no sustained-early genotype divergence claim. This threshold is arbitrary, not an author-declared statistical significance test, and must not be called proof.
+If APOE itself detected at DIV0, this is abundance only, NOT its own APOE aggregate formation or protein half-life. Early neuronal progenitor stage vs post-mitotic neuronal stage differs, so cannot interpret time course as aging a fixed same-cell population.
+No modification of MecCog entries; no wet-lab experiments performed and no Nobel claims.
