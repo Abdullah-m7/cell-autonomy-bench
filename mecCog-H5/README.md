@@ -26,6 +26,14 @@ Figure 3H in already-included Lee et al. 2023 reports **approximately 50% higher
 
 The original 22F user source workbook remains preserved unaltered. The updated 23F workbook is a **separate draft only**, not automatically an accepted, superior, or submitted contest entry.
 
+## Scientific classification sensitivity — variant only, 21 November 2026
+
+There is a **separate, unsubmitted 5-paper / 23-finding review candidate** created to test how the classification changes if four substrate/LC3 reporters are treated as *indirect output measurements* of the full lipid-to-lysosome H5 hypothesis. Unlike the source-verified baseline, this challenger has **provisional Class4/d4** for **P1.F2, P3.F4, P5.F3, P5.F4** (rather than Class2/d3). The source measurements are unchanged. Crucially, the MecCog rubric states that an **APOE genotype** contrast can itself be a direct input perturbation if APOE genotype is variable A; the proposed downgrade is **not based on observational genotyping**. It concerns the stronger causal claim that an APOE4-induced **lipid defect** mediates late-endosome/lysosome function and the uptake-dependent nature of the functional reporters. A reviewer may reasonably retain Class2 in a different operationalization. See [complete scientific referee analysis](H5_DIRECTNESS_AND_DONOR_QUALIFIER_SENSITIVITY_20261121.md) before treating this as final.
+
+A source-origin qualifier was also made explicit in that candidate: **Lee et al. 2023 used iPSCs originally obtained from an AD patient**, with CRISPR-edited isogenic APOE3 controls. The experiments occurred in reprogrammed and differentiated human astrocytes, not clinical AD brain tissue. Because H5 refers to "non-Alzheimer's, non-aged human brain cells", this is a potential **eligibility ambiguity**, not a proven exclusion. The updated candidate appends a compact donor-origin caveat to the Experimental system cells for P1.F1–F4 only. **No rows removed, and the original source-verified 23F version is preserved.**
+
+This sensitivity branch does not claim a better score, endorsement by challenge organizers, or an official submission. **The exact challenger workbook must be checked on its exported bytes with the official strict schema validator before any further action.**
+
 ## Method for every source finding
 
 1. Verify published/preprint status, DOI, PMID, species, experimental lineage, genotype, and source panel directly. Do not call 2026 bioRxiv an accepted journal study.
