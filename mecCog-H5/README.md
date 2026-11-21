@@ -1,4 +1,4 @@
-# Mechanism Atlas — MecCog H5 source-evidence method (20 November 2026)
+# Mechanism Atlas — MecCog H5 source-evidence method (21 November 2026)
 
 **Status:** Public method snapshot for an **unsubmitted draft**; not an accepted competition entry or a validated new Alzheimer mechanism. **Team:** Mechanism Atlas (researcher-led, GPT-6-assisted source searching, structured extraction, numerical audit, and coding). Attribution in the Method tab: `both`. No claim of independent human expert sign-off on all rows.
 
@@ -8,14 +8,14 @@
 
 Evidence must separately distinguish **lipid metabolism**, **late-endosome/lysosome localization**, and **functional clearance**. These are not interchangeable, and the proposed full causal link is stronger than any isolated marker change. Compartment, cell lineage, genotype, incubation and statistical unit are recorded per finding.
 
-## Source corpus: five primary studies, 19 findings
+## Source corpus: five primary studies, 21 findings
 
 | Block | Source and original identifiers | Scope and what the evidence does NOT establish |
 |---|---|---|
 | P1, 4 findings | Lee et al. *Cell Reports* 2023, DOI [10.1016/j.celrep.2023.113183](https://doi.org/10.1016/j.celrep.2023.113183), PMID 37777962 | Isogenic **human iPSC astrocytes**; lysosomal free cholesterol, autophagic flux, methyl-beta-cyclodextrin (MβCD) cholesterol depletion/rescue. Four days of treatment did not fully rescue oxidative metabolism, longer treatment did. Autophagy markers ≠ directly measured organelle pH. |
 | P2, 2 findings | TCW et al. *Cell* 2022, DOI [10.1016/j.cell.2022.05.017](https://doi.org/10.1016/j.cell.2022.05.017), PMID 35750033, [PMCID PMC9340815](https://pmc.ncbi.nlm.nih.gov/articles/PMC9340815/) | Isogenic human astrocyte lines. Figure 6H free-cholesterol/lysosome colocalization (~3x in APOE4); Figure 6I APOE secretion (~63% lower). APOE secretion is a **lipid-handling context marker**, not a standalone assay of lysosomal hydrolysis. |
 | P3, 5 findings | Revanna et al. **bioRxiv preprint, not peer-reviewed**, 13 May 2026, DOI [10.64898/2026.05.12.724612](https://doi.org/10.64898/2026.05.12.724612), PMID 42182449, [PMCID PMC13192593](https://pmc.ncbi.nlm.nih.gov/articles/PMC13192593/) | Isogenic human APOE3/APOE4 iPSC-derived microglia. Figure 3: cholesterol esters, **baseline late endosome/lysosome pH similar** between genotypes, but APOE4 lacks debris-triggered adaptive acidification, and DQ-BSA degradation differs. Fig 7M qualitative replication in a second human parental background (UCI5). pH measured here is **late/lysosomal**, not early-endosomal H1. |
-| P4, 1 finding | Hellén et al. *Journal of Neuroinflammation* 2025, DOI [10.1186/s12974-025-03470-y](https://doi.org/10.1186/s12974-025-03470-y), PMID 40457456, [PMCID PMC12131611](https://pmc.ncbi.nlm.nih.gov/articles/PMC12131611/) | Human APOE3/3 and APOE4/4 donor-derived microglia exposed to Aβ42; Fig 4F–H LGALS1 puncta indicate increased **lysosomal membrane damage** with APOE4. Lipid changes are not experimentally manipulated in that exact panel: contextual/weak evidence for the full H5 causal chain, not direct lipid-mediated proof. |
+| P4, 3 findings | Hellén et al. *Journal of Neuroinflammation* 2025, DOI [10.1186/s12974-025-03470-y](https://doi.org/10.1186/s12974-025-03470-y), PMID 40457456, [PMCID PMC12131611](https://pmc.ncbi.nlm.nih.gov/articles/PMC12131611/) | Human APOE3/3 and APOE4/4 donor-derived microglia: Fig 4F–H Aβ42-associated LGALS1 membrane damage (P4.F1); Fig 1G–H reduced self-quenched lysosomal cleavage readout with uptake confounding (P4.F2); Supplementary Fig 3C **no significant total cholesterol difference** in a separate batch (P4.F3). No assay establishes direct lipid-mediated causality. See [source addendum](HELLEN_2025_COUNTEREVIDENCE_ADDENDUM_20261121.md) for panel-specific caveats. |
 | P5, 7 findings | Mesentier-Louro et al. *Cell Stem Cell* (2026, peer-reviewed), DOI [10.1016/j.stem.2026.08.001](https://doi.org/10.1016/j.stem.2026.08.001), PMID 42636814, [PMCID PMC13528747](https://pmc.ncbi.nlm.nih.gov/articles/PMC13528747/) | Human isogenic APOE3/3 vs APOE4/4 astrocytes from **two donor backgrounds**; Fig 5a cholesterol accumulation with separate donor tests; Fig 4d baseline DQ-BSA impairment; Fig 5b MβCD rescue of DQ-BSA, and Fig S5c replication in donor 2; non-cyclodextrin treatments in Fig 5b did not show the same rescue. Different panels establish different steps, not one exclusive molecular mechanism. Earlier preprint of same study is NOT added as a separate independent paper. |
 
 This is a **selected literature audit**, not an exhaustive systematic review, and is not a priority claim for a new mechanism. Relevant no-effect/counterexamples are intentionally included, especially Revanna's similar basal lysosomal pH.
@@ -29,6 +29,12 @@ This is a **selected literature audit**, not an exhaustive systematic review, an
 5. For **directness**, score the *whole H5 hypothesis*: APOE4 → lipid metabolism disruption → late endosome/lysosome dysfunction. An increased filipin signal by itself is a lipid/localization endpoint, not degradation. Aβ42-triggered lysosomal damage without a lipid perturbation is contextual rather than direct evidence for lipid-mediated causality. Official strength runs **1 strongest → 5 weakest**, and scores are provisional scientific judgments, not authority rankings.
 6. Keep counterevidence (e.g. unchanged baseline pH, incomplete timecourse rescue) as explicitly separate findings. Do not collapse acute cargo uptake and degradation into one measure.
 
+
+## Hellén 2025 P4 update (21 November 2026)
+
+A controlled source audit retained the original P4.F1 without change and appended **two and only two** source-grounded rows. P4.F2 reports genotype-associated lower **self-quenched substrate cleavage** in Fig 1G–H; this is not intrinsic lysosomal flux because uptake differs. P4.F3 records a **negative** finding for total cellular cholesterol (metabolomics with separate-batch Amplex Red confirmation, Supplementary Fig 3C); this does not test lysosomal lipid distribution or establish equivalence. The overall paper includes 8 APOE3/3 and 6 APOE4/4 iPSC lines across assays, **not** necessarily that number per panel; assay-level n and precise p are left N/A if no figure-specific numeric source was verified. Proposed provisional directness scores are Class 4/d4 for P4.F2 and Class 5/d4 for P4.F3. No more generic context findings were included merely to increase rows. Source QA and explicit limits: [Hellén addendum](HELLEN_2025_COUNTEREVIDENCE_ADDENDUM_20261121.md).
+
+The prior *five-paper/19-finding* spreadsheet remains an unmodified reproducible predecessor. The expanded *five-paper/21-finding* review candidate must still receive independent biological scoring review, and an official submission remains pending user direction. The workbook's Method URL/Commit SHA must exactly pin the final source-method commit before any potential upload.
 
 ## Additional P5 extraction gates (published August 2026)
 
