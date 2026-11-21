@@ -73,6 +73,29 @@ python3 reproduce_Krogsaeter2026_source_locked_panel_v2.py
 
 It validates all four input SHA256 values, extracts 20 exact preselected targets, reproduces source means to tight tolerance, checks no missing genotypes are silently imputed, performs leave-one sensitivity, checks source FDR, and saves deterministic JSON and a [small derived 20-target CSV](Krogsaeter2026_SOURCE_LOCKED_DETERMINISTIC_20_TARGETS.csv). It DOES NOT download publisher data silently, calculate formal p or change contest workbooks.
 
+## Exploratory proteome-wide crossmodal check — convergence in weak correlations, not direction counts
+
+A source-locked **posthoc** extension of the same author data matched protein-group abundance E4-vs-E3 changes to protein half-life E4-vs-E3 changes using **two different source processing pathways**:
+
+| Processing and inclusion | N protein groups/genes | Descriptive Pearson r | Spearman r | Same-sign fraction |
+|---|---:|---:|---:|---:|
+| Independently join S3A author limma-batch-corrected log2FC to S4C mean half-life ratio by a **unique, exact GeneSym** and >=3 differentiations/genotype | **2,205** | **−0.0750** | −0.0822 | **49.93%** |
+| Re-read authors' separate S3C **protein-feature integration** table, unique exact gene symbol with valid E3/E4 half-lives | **2,790** | **−0.0469** | −0.0558 | **71.97%** |
+
+**The stable observation across analysis choices is a near-zero LINEAR ASSOCIATION between changes in protein half-life and changes in protein abundance.** The same-sign fraction is **NOT STABLE**: even the source authors' S3C uses a different processed abundance log2FC than S3A for certain symbols, and different filtering/matching rules. In particular, APP has two source isoform-protein abundance groups and is **excluded** from the unique-S3A/S4C join; S3C contains two APP entries under its different processing. Do NOT portray 49.93% as a universal observed rate of decoupling or use 71.97% as an independent replication.
+
+The study's published conclusion that **proteins with longer original half-lives are more prone to accumulation** is a **different statistical estimand** from the question tested here (whether the **E4–E3 CHANGE** in half-life predicts the E4–E3 CHANGE in abundance). The weak cross-change association is **not a refutation** of the authors' baseline-long-lived-protein analysis.
+
+These two derived checks are reproducible from their original S3/S4 files using:
+- [Exact unique-gene S3A/S4C join](audit_Krogsaeter2026_global_crossmodal_source.py) and its [posthoc specification](FROZEN_KROGSAETER_GLOBAL_CROSSMODAL_JOIN_20261121.md).
+- [Author-integrated S3C sensitivity](check_Krogsaeter2026_S3C_author_integrated_join.py) and its [posthoc specification](FROZEN_KROGSAETER_S3C_INTEGRATED_CHECK_20261121.md).
+
+We downloaded the scripts and protocols again at pinned GitHub commit `f0b6e1345da67aba83be5fa27d5dae567df9a3e8` into an empty temporary directory with publisher-file symlinks, **successfully executed both without error**, and reproduced both source counts and Pearson coefficients. This is computer reproducibility on **the same author's datasets**, NOT a second biological experiment.
+
+### Why this matters for the next APOE4 hypothesis test
+
+The source demonstrates clear heterogeneity in protein turnover/abundance and missing APOE isotope kinetics. We should not attempt to infer a specific apoE4 *aggregate nucleation rate* from an APOE4-associated **whole-proteome** half-life shift, nor use an APP or total MAPT lifetime as a proxy for **seed-competent tau aggregate** clearance. Our next valid experiment would separately quantify intact ApoE monomer, conformational ApoE aggregates, imported seeds, and lysosomal/proteasomal removal **in the same donor-aware human cell system**, with matched loading and independently calibrated assays.
+
 ## Biological and competition boundary
 
 Neither protein-group abundance nor pSILAC half-life establishes **de novo conformational aggregation of APOE4 within nonaged, non-AD human endolysosomes** (the full MecCog H3 hypothesis). The primary APOE half-life is not measurable from these author data. Our **research-stage** next step is matched intracellular delivery of aggregate-free ApoE3/4 plus a separately barcoded preformed-seed control, jointly measuring intact monomer, aggregate conformation, lysosomal location and removal, across independent iPSC parental backgrounds and differentiation batches. Do not misuse 241-point Aβ ThT trajectories as ApoE aggregate rates.
