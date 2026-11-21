@@ -1,0 +1,43 @@
+# Mechanism Atlas | APOE4: SHIP1 × cholesterol-lowering combined-rescue study
+
+**Status:** Literature-driven prospective experiment, NOT original human-cell results, NOT a clinical treatment, and NOT a MecCog official submission. Source audit: 21 November 2026.
+
+## Exact published prior art
+
+**1. Entry defect and published SHIP1 rescue.** Gevorgyan et al., *APOE4 and INPP5D converge on membrane mechanics to regulate endocytosis in human astrocytes*, bioRxiv, posted 22 May 2026. DOI **10.64898/2026.05.22.726347**, PMID 42239208, PMCID PMC13228211. In isogenic human iPSC-derived astrocytes from **AG09173 and KOLF2.1J**, APOE4 reduced clathrin-coated pit maturation and 5-minute fluorescent transferrin uptake. Increased INPP5D/SHIP1 or PICALM expression rescued transferrin entry. Fig 6J documents a **phosphatase-inactive INPP5D mutant** that also rescues uptake: that observation belongs to the authors, not this project. Follow-up RAB11 and RAB7 staining showed no detectable improvement, but **staining is not functional surface-return or degradative flux**.
+
+Primary article: https://pmc.ncbi.nlm.nih.gov/articles/PMC13228211/
+
+**2. Cholesterol-associated late defect and cyclodextrin response.** Mesentier-Louro et al., *Cholesterol Dysregulation in APOE4 Astrocytes Promotes α-Synuclein Pathology in miBrains*, *Cell Stem Cell*, 2026. DOI **10.1016/j.stem.2026.08.001**, PMCID PMC13528747. Authors use **AG09173 (Donor 1) and KOLF2.1J (Donor 2)** isogenic astrocytes, and other background(s) for other assays. Fig 4d: genotype-difference DQ-BSA cleavage; **Fig S4e**: DQ-BSA normalized by co-internalized **dextran** still differs, author **p = 0.0098**. Fig 5b: after treatment with **2HβCD or methyl-β-cyclodextrin (MβCD)**, DQ-BSA integrated fluorescence over 24 hours rises (author Fig5b MβCD **p = 0.019**, n=4 biological replicates in that figure). The **Fig 5b legend does not document dextran-normalized rescue**. Fig S5c reported replication of an MβCD-associated DQ-BSA effect in a second donor setting. This is evidence for a treatment-linked improvement in an established **proteolytic fluorescence proxy**, not chemically identified degraded peptide mass or a direct physical separation from improved cargo uptake.
+
+Primary article: https://pmc.ncbi.nlm.nih.gov/articles/PMC13528747/
+
+**3. Other cholesterol-reduction prior art.** ApoE4 lysosomal cholesterol reduction rescuing aspects of mitophagy and mitochondrial physiology was published in human astrocytes in 2023 (PMID 37777962); APOE4 ferroptosis protection by MβCD has also been reported (PMID 40571761). Therefore **cyclodextrin rescue, cholesterol–lysosome linkage, and SHIP1 endocytosis rescue are not novel**. A combination and its validated late fate could still merit a new prospective experiment, but priority or novelty must be checked by a systematic literature/patent review; this targeted search found no direct 2×2 test, which is **not proof no one else has done it**.
+
+## Cross-study boundary: same parental background ≠ same experiment
+
+The two 2026 studies share the **names AG09173 and KOLF2.1J**, but different laboratories and protocols cannot be pooled as paired experimental observations. Clone identities, passage numbers, differentiation conditions and actual biological batch independence need verification. Gevorgyan's early uptake readout uses **serum-free astrocyte conditions**, whereas Mesentier-Louro's astrocyte media/treatment schedule is not guaranteed identical. A combined study MUST reproduce both baseline phenotypes **under one harmonized protocol** before attempting combined rescue.
+
+## Conditional two-stage GO/NO-GO plan
+
+**Stage 0: audit feasibility in same biological system.** Independently derive E3/E4 astrocytes from at least AG09173 and KOLF2.1J; confirm cell genotype, clone history, donor clinical provenance, differentiation quality and cell identity. Establish under identical media that E4 exhibits **both** a reproducible 5-min transferrin entry deficit and a reduced *uptake-corrected* lysosomal degradative readout versus E3. If either gap does not replicate, STOP the simple two-bottleneck hypothesis, adapt only after registering the alternative.
+
+**Stage 1: two-factor intervention.** In a matched E3 and E4 panel, apply a factorial design crossing SHIP1-WT overexpression (present/absent) with a *validated, non-cytotoxic* MβCD protocol (present/absent), total **8 arms per independent parental background × differentiation batch**. In parallel, consider a mechanistic arm involving previously published SHIP1-catalytic-dead and PICALM, *after* the first-factor assay is feasible; do not silently overload the pilot or treat them as novel inventions. Test whether MβCD modifies both membrane entry and late clearance. Do not assume the two drugs have organelle-specific independent effects.
+
+**Primary function 1 (entry and return):** independently quantify 5-minute transferrin uptake, then after uptake-matched synchronized pulse and removal of surface ligand, directly measure Tf receptor cargo surface return **as fraction of initially internalized ligand**, with the actual receptor expression confirmed. RAB11/RAB7 immunostaining is an additional marker, not this rate.
+
+**Primary function 2 (degradation):** a distinct degradable protein substrate with *calibrated t0 molar uptake* and **chemically verified fragments/products** (plus retained intact, secreted/returned intact, other fate pools) measured on a consistent molar-equivalent basis. DQ-BSA±co-internalized dextran is a **secondary fluorescence proxy** with pH/dye/rate controls, never equivalent to a measured degraded mass. Directly verify whether any MβCD-induced rise in DQ-BSA signal survives entry correction.
+
+**Safety/physical state:** measure independently calibrated early-endosomal pH and lysosomal pH, cellular viability, plasma-membrane cholesterol and tension; cholesterol depletion could change both entry and late fate, and may be harmful if excessive. A treatment is NOT declared a functional rescue based on fluorescence alone.
+
+**Primary analysis:** within each truly independent differentiation batch and parental genetic background, compute **E4 SHIP1 × MβCD difference-in-differences** on (i) entry, (ii) internalized-dose-normalized receptor return and (iii) fragment-verified degradation. Also observe E3 effects to test genotype specificity. Compare E3-vehicle and E4-vehicle reference gaps, but only after each gap is actually established. Predefine one primary endpoint or a controlled gate; power and hierarchical donor/batch inference require real pilot variance and an additional parental donor for external replication where possible.
+
+**Falsifiers:** If CD improves DQ-BSA fluorescence only by increasing uptake but not uptake-matched verified fragment mass, REJECT downstream degradation rescue. If SHIP1 improves entry but not surface return or clearance, label early-only rescue. If the combination impairs viability or lysosomal pH, NO GO on safe full rescue. If all apparent effects vanish after parental-line and differentiation-batch modeling, NO genotype-specific pathway claim. If the expected E4 baseline defect is absent under harmonized media, DON'T force a rescue estimate.
+
+## Analysis artifact and reproducibility
+
+Standalone Python 3 source: `dual_rescue_factorial_gate.py` plus `test_dual_rescue_factorial_gate.py` in this conversation's downloadable folder. These scripts perform **research-data engineering QA, descriptive interaction estimates and disjoint-cargo mass-balance checks**, not biological experiment generation, significance testing or therapeutic assessment.
+
+They were tested on **64 clearly synthetic records**: 2 fictitious parental backgrounds ×2 fictitious batches ×2 distinct cargo assays ×8 factorial arms; all synthetic. The tests check duplicate/missing arms, negative mass, mass imbalance, unverified fluorescence-only cleavage, required experimental provenance and correct distinction between transferrin entry/recycling and degradable-substrate cleavage. In a discovered and corrected software logic issue, the final dual-function gate correctly **does not require degradation-substrate entry to improve**; instead it requires *matched initial uptake and verified degradation* for that substrate, alongside Tf entry and return.
+
+**No MecCog primary Step 1 dataset was changed.** This proposal does not demonstrate H3 de novo ApoE4 aggregation, H2 ARF6-specific receptor recycling, or H5 same-assay lipid-causal lysosomal function. No study collaborator has yet committed to performing it.
