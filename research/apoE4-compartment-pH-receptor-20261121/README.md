@@ -49,6 +49,12 @@ Using the previously frozen **eight posthoc APOE3/E4 neuronal maturation contras
 
 **Caveats:** Selecting these comparisons after viewing the source means makes both tests exploratory, not independent confirmatory inference. The D-suffix is a *tentative* matching assumption; genotype-matched author differentiation method does not unambiguously establish every suffix mapping. With only 5 paired observations, the minimum attainable two-sided exact sign-flip p is 0.0625. DIV14/21 are neural progenitor-stage, not mature neuron assays. **We therefore do not report p=0.00216 alone as proof of a new genotype effect.** The full eight-contrast source-audit JSON and code remain on the authorized Mac; no MecCog submission was modified.
 
+### Reproduced directly from GitHub in a clean research directory
+
+We downloaded both the source-locked audit script and its frozen posthoc protocol at **immutable GitHub commit `181c69bd279fc216a530b06ed26d105e555b27b7`** into a brand-new empty temporary folder on the authorized Mac, then symlinked the original author's unchanged longitudinal XLSX and preceding (also unchanged) exploratory 8-contrast JSON. The audit script executed with **exit code 0**, checked SHA256 of its inputs, and produced exactly the same matched-batch sensitivity JSON as the original run, SHA256 `f28032c9ad8df752cca8b19c0cec5d0af15aa92f5f964005d5d52044423058c5`.
+
+This verifies **software/source reproducibility**, not biological replication or correct mapping of all D-suffix batch pairs. Earlier p-values remain exploratory due post-selection and different experimental-unit assumptions. This result is **not** a new MecCog published source experiment and must not be submitted as such.
+
 ## What is ready and what is not
 
 - **Ready:** literature-anchored contradictory sign matrix, a specific cell/receptor/compartment-matched human-iPSC experimental design, prespecified rejection criteria, an honest computational source audit.
