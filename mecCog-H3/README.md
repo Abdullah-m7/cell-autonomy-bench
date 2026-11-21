@@ -10,7 +10,7 @@ The full statement has **four conditions**: APOE4 vs APOE3, **protein aggregatio
 
 **Correction check completed:** Kaji et al. issued a 2025 erratum (DOI `10.1016/j.immuni.2024.11.024`) changing Figure 5C TREM2KO quantitative graph and relabeling Figure 7B from IBA1 and MX04 aggregates to LAMP1-positive, APOE+/Aβ42+ lysosomes. See [the audited corrigendum](ERRATUM_KAJI_2024.md). The draft P1.F1–P1.F5 do **not** transcribe uncorrected Figure 5C numbers or claim Fig7B is a genotype-specific aggregate quantification. Lysosomal dual-positive cargo must not be described as a direct fibrillar APOE aggregate count.
 
-## Six selected primary papers (20 findings)
+## Seven selected primary papers (22 findings; H3 source-context sensitivity)
 
 | ID | Primary paper | Context and scientific limitation |
 |---|---|---|
@@ -21,9 +21,16 @@ The full statement has **four conditions**: APOE4 vs APOE3, **protein aggregatio
 | P5 | Konings et al., *Life Science Alliance* 2023, [DOI 10.26508/lsa.202201887](https://doi.org/10.26508/lsa.202201887), PMID **37290814**, [PMCID PMC10250689](https://pmc.ncbi.nlm.nih.gov/articles/PMC10250689/) | Three findings: 4h N2a uptake of recombinant APOE4 > APOE3 (33.3% vs 23.0% of cells, p=0.024), **not an aggregation measurement**; ApoE-LAMP1 colocalization is **not greater** for E4 (36% E3, 30% E4; p=0.2744); ApoE overlap with APP-processing products in primary **APP/PS1 transgenic mouse neurons** similar for E3/E4 (7.3%/8.1%, p=0.6382). The 82e1 antibody recognizes both Aβ and APP-βCTF, so co-localization is neither direct Aβ binding nor APOE aggregation. |
 
 | P6 | Xia et al., *Nature Communications* 2024, [DOI 10.1038/s41467-024-49028-z](https://doi.org/10.1038/s41467-024-49028-z), PMID **38824138**, [PMCID PMC11144216](https://pmc.ncbi.nlm.nih.gov/articles/PMC11144216/) | Three additional findings. Cell-free early apoE–Aβ coaggregation was **not significantly isoform dependent** by Figure 1G–H. Human microglia-like and human astrocyte-like cells exposed to **exogenously prepared non-lipidated ApoE3/Aβ vs ApoE4/Aβ** early coaggregates showed source Fig 4 uptake ratios E4/E3≈0.5375 (**46.2% lower microglia**) and ≈0.7764 (**22.4% lower astrocytes**), 3 biological replicates/cell model. **Neither result establishes endogenous APOE4 endolysosomal fibrillation or an intrinsically APOE4/4 genotype.** |
+| P7 | Guo et al., *Cell* (online 2024; 2025 issue), [DOI 10.1016/j.cell.2024.10.027](https://doi.org/10.1016/j.cell.2024.10.027), PMID **39532095**, [PMCID PMC11724755](https://pmc.ncbi.nlm.nih.gov/articles/PMC11724755/) | **Two additional Class5 contextual findings**: Fig5O–Q shows CE(20:4)/POPC lipidated APOE4 pellets more than APOE3 at **pH 4.5** after 4 days, while particles remain largely soluble at pH 7.4; Fig S5L–M shows minimal acidic aggregation for ApoE particles without CE(20:4) or with CE(18:1). The significance at acidic pH is **cell-free**, not a human intracellular assay. [Exact source-audit note](GUO_2024_ACIDIC_PUFA_APOE_AGGREGATION_H3_SOURCE_GATE_20261121.md). |
 
 This is a **selected primary-source audit**, NOT exhaustive global systematic review. Older studies and new manuscripts may alter which comparator assays best test H3. We deliberately retain results **against** the simplistic idea "more puncta = greater aggregation."
 
+
+## P7 source-specific added condition (21 Nov 2026)
+
+This **alternative candidate** expands the H3 source bibliography with Guo et al. *Cell* 2024/25 (previously used by our H4/H5 research) **only for an acidic environment × lipid-cargo check**. Figure 5Q has two `**` significant brackets; one is **APOE3 vs APOE4**, author methods map `**` to `p<0.01`. Figure 5O–P shows mostly soluble CE(20:4) particles at pH 7.4 and pelletable CE(20:4) particles after four days at 37°C and pH 4.5. Figure S5L–M lacks peroxidizable CE(20:4) and shows minimal acidic ApoE aggregation in those different preparations. P7.F1 and P7.F2 are **both Class5 Other** relative to the whole H3 hypothesis, since they demonstrate **cell-free aggregation**, not within endolysosomes of non-aged/non-AD human brain cells. The figure ratio is **not** a human lysosomal flux or direct cellular de novo aggregation rate. Source specificity, controls, paper metadata, uncertainty, two protein batches and 3 experimental replicates per batch: [P7 primary source memo](GUO_2024_ACIDIC_PUFA_APOE_AGGREGATION_H3_SOURCE_GATE_20261121.md).
+
+This does NOT contradict Kaji P1.F2's neutral/other preparation lipidated no-aggregation result. Different PUFA cargo and acid pH are different biochemical regimes. Whether this P7 adds enough relevance under the competition's anti-padding rule remains **unresolved**: keep the earlier 6P20F workbook preserved. No official submission has been made.
 
 ## Author-supplied Xia 2024 Fig 4 numerical audit — source-label NO-GO
 
