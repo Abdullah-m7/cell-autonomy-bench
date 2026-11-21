@@ -1,0 +1,8 @@
+# Posthoc exploratory global cross-modal concordance — frozen before join outcomes
+2026-11-21. Real 2026 Krogsaeter preprint author abundance Table S3A + pSILAC turnover Table S4C (see source checksums below). S3A per-protein abundance uses limma batch-adjusted genotype log2FC, S4C has per-protein mean half-lives from independent differentiation cultures; NOT necessarily the same exact samples.
+Original S3 SHA256 8c7a340b856dccebf61e511561fbbe3da98476721516009a5fe582858f85a84a; S4 6928ce92457dc5cb4f1208369a7957c83ffb78c5eec3aa208d9d238fc0ec39ab.
+
+Question: is E4-associated whole-protein abundance log2FC generally concordant with E4-vs-E3 log2(half-life ratio)? Authors have studied related global phenomena, so do not claim novel first discovery; use this only to diagnose whether a single half-life rule can explain a particular target.
+Join only literal exact GeneSym names that occur ONCE in S3A and ONCE in S4C, and S4C has at least 3 finite independent differentiations/genotype. Exclude mixed symbols, multiple S3A isoform groups and APOE that is absent in S4C. Preserve input source counts.
+Calculate Pearson and Spearman descriptive correlation across source gene groups; raw fraction same signs; no statistical p across dependent proteins or CI for source subjects. Check 20 preselected targets including MAPT, APP, CLU, RAB7A, CAPZA2, PSME1 against global paired distributions. Report source-adjusted FDR for abundance only; do not invent p of half-life or synthesis flux.
+No posthoc picking a gene as new target after viewing source. No direct source evidence of ApoE4 lysosomal aggregation, no actual original human experiment. If source matching leaves few or ambiguous, NO-GO rather than false association. Do not alter MecCog Step1 workbooks.
