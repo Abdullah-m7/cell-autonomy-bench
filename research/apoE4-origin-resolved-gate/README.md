@@ -39,7 +39,7 @@ Run [the executable Python script](formation_vs_clearance_synthetic.py) using on
 
 ## Global structural identifiability check — two equally valid biological fates (21 November 2026)
 
-**New work in our ApoE design model; the underlying mathematics is prior art.** A two-compartment system with one measured output can possess an exact parameter-exchange ambiguity (see [Godfrey & Chapman, 1990](https://doi.org/10.1016/0378-4754(90)90185-L), [Jacquez & Greif, 1991](https://doi.org/10.1016/0025-5564(91)90092-W), and a [2026 structural-identifiability tutorial](https://doi.org/10.1007/s11538-026-01779-0)). Our contribution is an **application to an assay-design question**, not the invention of the mathematical theorem.
+**New work in our ApoE design model; the underlying mathematics is prior art.** A two-compartment system with one measured output can possess an exact parameter-exchange ambiguity (see [Godfrey & Chapman, 1990](https://doi.org/10.1016/0378-4754(90)90185-L), [Zhang, Collins & King, 1991](https://doi.org/10.1016/0025-5564(91)90092-W), and a [2026 structural-identifiability tutorial](https://doi.org/10.1007/s11538-026-01779-0)). Our contribution is an **application to an assay-design question**, not the invention of the mathematical theorem.
 
 Let initial monomer M(0)=100, initial newly formed aggregates A(0)=0, rates kf for assembly, km for monomer removal, and kc for aggregate removal:
 
