@@ -40,6 +40,14 @@ Additional prior art: Dutta & Donaldson 2015 DOI `10.1111/tra.12302` showed Rab3
 6. For Lysaker PXD077344, the original public author-processed XML includes `logFC_APOE4_A_vs_APOE3_A`, adjusted p-values and five culture-level abundance values per genotype. The shipped `reproduce_pxd_ARF6.py` (adapted from the project source parser) reads that file plus `WilkinsHM_APOE_Brain_BrainMito_iNeurons_iAstrocytes_Metadata.xlsx` locally; this repository does not redistribute those source datasets. Source genes ARF6, RAB7A are **whole-cell proteins**, not active forms. The processed logFC is transcribed as a source quantity; don't mistake sample counts for independent donors.
 7. Reference the public Method URL and **pinned git commit SHA** in the Excel Method tab. Use `printed_in_text`, `supplement_only`, and `not_found_in_source` literally as defined by the challenge. Never synthesize a paper p-value or human drug-response claim.
 
+## Additional directness gate: true human Tf recycling null (21 November 2026)
+
+The original 5-paper / 20-finding H2 spreadsheet conservatively labels all findings Class5. A separate **unsubmitted scientific-sensitivity candidate** proposes **Class3/d4 weak** for **P4.F1** and **P4.F2** from Bell et al., *Stem Cell Reports* 2025 DOI [10.1016/j.stemcr.2025.102607](https://pmc.ncbi.nlm.nih.gov/articles/PMC12447338/).
+
+In human isogenic APOE3/E4 iPSC-derived brain endothelial cells, Figure 5H shows **fewer Tf-positive endosomal sorting tubules** with E4, but Figure 6B/D finds **similar normalized transferrin pulse–chase recycling rates** across both independent parental genetic backgrounds; initial total Tf loading is higher under E4. These are different observables, and the normalized recycling result is explicit source **negative evidence**. The paper did **not** measure ARF6-GTP in these cells: the complete H2 claim about *ARF6-related* recycling remains unproven, which is why even these relatively relevant findings are not labeled Class1. A referee may reasonably retain the original Class5 rather than provisional Class3 when assigning evidence to the full pathway. **P4.F3** (endocytosis uptake) remains Class5; all other 18 results remain untouched.
+
+Read the [Bell figure-level source adjudication](BELL2025_TFR_RECYCLING_NULL_DIRECTNESS_SENSITIVITY_20261121.md) before interpreting this as final. No official challenge submission or biological discovery occurred.
+
 ## Explicit scientific boundary and possible falsifier
 
 These experiments suggest at least **two non-equivalent routes**: ABCA1 transporter handling may change with APOE4 and ARF6 abundance, while **TfR1's true normalized recycling rate can remain unchanged** in a human endothelial context; early uptake is PICALM sensitive; the outcome of ARF6 silencing varies with cholesterol loading. That is a **hypothesis-generating synthesis of existing studies**, not a new proven biochemical discovery.
