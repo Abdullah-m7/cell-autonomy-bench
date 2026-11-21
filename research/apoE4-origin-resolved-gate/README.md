@@ -37,6 +37,40 @@ Run [the executable Python script](formation_vs_clearance_synthetic.py) using on
 - Include non-ApoE lipid peroxidation controls and pH sensitivity calibrations for each fluorophore. If assembly signals are fully accounted for by seed import/uptake, or have no orthogonal protein confirmation, **reject de novo formation**.
 - Independently normalize/reproduce across donor backgrounds; images and wells do not constitute independent patients. No p-values or therapeutic efficacy are claimed.
 
+## Global structural identifiability check — two equally valid biological fates (21 November 2026)
+
+**New work in our ApoE design model; the underlying mathematics is prior art.** A two-compartment system with one measured output can possess an exact parameter-exchange ambiguity (see [Godfrey & Chapman, 1990](https://doi.org/10.1016/0378-4754(90)90185-L), [Jacquez & Greif, 1991](https://doi.org/10.1016/0025-5564(91)90092-W), and a [2026 structural-identifiability tutorial](https://doi.org/10.1007/s11538-026-01779-0)). Our contribution is an **application to an assay-design question**, not the invention of the mathematical theorem.
+
+Let initial monomer M(0)=100, initial newly formed aggregates A(0)=0, rates kf for assembly, km for monomer removal, and kc for aggregate removal:
+
+`dM/dt = -(kf+km)*M`; `dA/dt = kf*M-kc*A`.
+
+The exact aggregate signal is `A(t) = M0*kf*(exp[-(kf+km)t]-exp[-kc*t])/(kc-(kf+km))`. **The transformation** `(kf,km,kc) -> (kf,kc-kf,kf+km)` leaves the *ENTIRE continuous aggregate curve* unchanged whenever both alternatives remain biologically admissible. The measured A(t) is **not globally unique** in these parameters even for noiseless dense measurements. This does NOT assert that all parameters are locally unidentifiable in the formal mathematical sense.
+
+| Hypothetical parameter set | kf (/h) | monomer removal km (/h) | aggregate removal kc (/h) | A(12h) | M(12h) | already removed D(12h) |
+|---|---:|---:|---:|---:|---:|---:|
+| Interpretation 1 | 0.08 | 0.12 | 0.30 | **5.0715** | **9.0718** | **85.8567** |
+| Interpretation 2 | 0.08 | 0.22 | 0.20 | **5.0715** | **2.7324** | **92.1961** |
+
+At 24 hours both A(24h)=0.59865 again, but M differs markedly. The **maximum aggregate-curve absolute mismatch over 577 points from 0–72h was exactly zero in double precision**, and 250 randomly generated feasible positive-parameter transformations passed numerical checks. Code [structural identifiability](structural_identifiability_twofold.py), backed by SHA-locked local results `H3_AggregateOnly_Twofold_Identifiability_20261121.json` on the researcher Mac. **No biological data were fit.**
+
+### What one orthogonal monomer assay would change
+
+Under **these artificial two rate sets**, the absolute monomer difference `|100*exp(-0.20t)-100*exp(-0.30t)|` peaks at **t = ln(0.30/0.20)/(0.30-0.20) ≈ 4.05465 hours** (14.8148 arbitrary units). At 24 hours the monomer difference is only **0.7483**. Thus if measurement noise has the **same absolute SD at each time** (one *assumed* Gaussian SD=3 units), a single 4.05h monomer readout can theoretically distinguish the two fixed models much more reliably than a 24h readout (toy equal-prior misclassification risks ≈0.00677 vs ≈0.45037). This is **not a real power calculation or experimentally established optimal time**, and heterogeneous/relative fluorescence noise would change the choice. The timing must be optimized in new human-cell pilot data, not blindly used.
+
+Executable code: [optimal monomer measurement](optimal_monomer_measurement.py). The important general result is that **an orthogonal monomeric intact-ApoE measurement and measured degradation/exit mass break this particular symmetry**, while extra images of aggregate-only fluorescence do not.
+
+### Source-data sufficiency: why we have NOT claimed a real kinetic estimate
+
+| Existing curated source | What is actually measured | Missing to identify new ApoE assembly and clearance |
+|---|---|---|
+| Xia et al., *Nature Communications* (2024), doi 10.1038/s41467-024-49028-z, author Figure1A | 241-timepoint Thioflavin T reporter of **Aβ42 fibrillation**, perturbed by APOE isoforms; processed worksheet has **one trajectory per condition**, not complete biological replicates | ApoE self-aggregate specificity, intracellular organelle, ApoE monomer, degradation and seeded-input origin |
+| Guo et al., *Cell* (2024/25), doi 10.1016/j.cell.2024.10.027, Fig5O-Q | Endpoint pelleting of purified CE(20:4)-ApoE isoforms at pH4.5 / pH7.4, not a live-cell time-course | In situ ApoE conformational flux, monomer and export, independently defined cell donor backgrounds |
+| Kerman et al., *Alzheimer's & Dementia* (2024 meeting abstract, 2025 indexed), doi 10.1002/alz.092614 | ApoE FLIM-FRET/aggregate detection in **living BHK nonbrain cells**; separate tagged-ApoE uptake in human neurons | Same human-cell compartment APOE aggregate formation assay with lysosomal localization, new vs imported conformations |
+| Hellén et al., *J Neuroinflammation* (2025), doi 10.1186/s12974-025-03470-y | Human iPSC microglial uptake and lysosomal enzyme-surrogate fluorescence | Direct ApoE aggregate identity and formation/clearance rates |
+
+**This is a screened set of four relevant public sources, not a systematic proof that no such dataset exists anywhere.** Continue source search and seek experimental collaborators. Do not fit the H3 ApoE formation-vs-clearance model to an *Aβ reporter* and call the parameters biological ApoE rates. No new human wet-lab experiment has occurred.
+
 ## Competition and collaboration boundary
 MecCog H3 (existing 6-paper/20-finding and 7-paper/22-finding candidate workbooks) **still lacks a published finding measuring all components of direct de novo ApoE4 endolysosomal aggregation in eligible human cells**. This model is a research-design instrument and **must not** be inserted into Step 1 as a source experimental finding. No MecCog entry has been uploaded.
 
