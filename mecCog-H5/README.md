@@ -2,6 +2,16 @@
 
 **Status:** Public method snapshot for an **unsubmitted draft**; not an accepted competition entry or a validated new Alzheimer mechanism. **Team:** Mechanism Atlas (researcher-led, GPT-6-assisted source searching, structured extraction, numerical audit, and coding). Attribution in the Method tab: `both`. No claim of independent human expert sign-off on all rows.
 
+## Source posthoc referee correction — MβCD Fig5b and S5c DQ-BSA (21 November 2026)
+
+The 6-paper/26-finding H5 submission *review candidate* contains two distinct within-paper rescue findings from Mesentier-Louro et al. (*Cell Stem Cell*, doi 10.1016/j.stem.2026.08.001), H5 P5.F5 (Donor1/AG09173 Fig5b) and P5.F6 (Donor2/KOLF2.1J FigS5c). We checked the untouched author **original Zenodo XLSX** for both: MD5 `45973d6d65de8a7d564f41dc2efe44ce` and `fab4450f92e26f1b192f1c33c5d02faf`, respectively.
+
+The Fig5b raw DQ-BSA integrated fluorescence AUC MβCD/E4-vehicle was **1.571×**, whereas AUC after subtracting initial t0 fluorescence per source trajectory was **1.013×**. A large t0 baseline difference algebraically contributed **97.83%** of this specific raw AUC treatment gap; this is NOT proof that the offset was an artifact or that digestion did not improve. In FigS5c second parent background, t0 drug was **lower** than control, raw AUC MβCD/control **1.389×** and t0-subtracted AUC **1.485×**. Therefore the first donor's interpretation cannot be generalized to the second. Neither drug-rescue source file records same-well dextran co-uptake or chemically verified proteolysis mass-balance, and subtracting fluorescence t0 is NOT such a correction. The separate published FigS4e untreated-genotype dextran-normalized difference (author p=.0098) remains a distinct experiment.
+
+**Competition source directness:** Retain the *authors'* original reported Figure5b MβCD `p=.019` and Fig S5c `p=.0045` from time-dependent author analysis. Our retrospective exact n4-vs-n4 AUC permutations test DIFFERENT estimands and must not overwrite publication p. Four trajectories per source group are NOT four parental iPSC donors; exact independent differentiation n underlying FigS5c is not confirmed from the file. The added source notes clarify measured DQ-BSA **cleavage-proxy fluorescence** rather than claiming restored real absolute proteolytic flux. **Original Class3 ratings remain PROVISIONAL** in a separate source-review alternative, pending official rubric/human expert adjudication. The prior 6P26F workbook and all original rows remain preserved. This is analysis of previously published source data, not an additional primary finding, Nobel breakthrough, human experiment by our team or an official MecCog upload.
+
+[Panel-by-panel source audit, exact original MD5s, and falsification criteria](FIG5B_S5C_RESCUE_T0_SOURCE_REFEREE_20261121.md). The audited original source/reanalysis code is independently documented [here](https://github.com/Abdullah-m7/cell-autonomy-bench/blob/6734296593b5f3c7f4740abc3677a1ad570cbe7d/research/apoe4-fig5b-dq-bsa-sourceaudit-20261121/README.md).
+
 ## The exact H5 hypothesis
 
 > In some types of non-Alzheimer's, non-aged human brain cells, APOE4 disruption of lipid metabolism, compared with APOE3, results in impaired late endosome/lysosome function.
