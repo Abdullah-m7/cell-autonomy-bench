@@ -34,6 +34,14 @@ A source-origin qualifier was also made explicit in that candidate: **Lee et al.
 
 This sensitivity branch does not claim a better score, endorsement by challenge organizers, or an official submission. **The exact challenger workbook must be checked on its exported bytes with the official strict schema validator before any further action.**
 
+## Independent donor-origin and source-quotation audit (21 November 2026)
+
+We inspected Hellén et al. 2025 [original Springer Supplementary Table 1](https://static-content.springer.com/esm/art%3A10.1186%2Fs12974-025-03470-y/MediaObjects/12974_2025_3470_MOESM1_ESM.docx), SHA256 `c5eb0af38ed370a1b5b5f14c2ad2fd1c8525c5946e50053e2b13083ee6a47f80`. It lists **heterogeneous donor origin**: healthy APOE4/4 lines as well as `E4/4_4` NPH/AD, `E4/4_5` AD and `E4/4_6` an isogenic derivative of the AD-associated line. Donor ages at biopsy range **58–80** in the total source pool, but iPSC differentiation is **not a direct measure of aged cell phenotype**. No original figure-specific line mapping was verified for P4.F1/F2/F3, so **do not assign a diseased donor to a particular panel**. The revised review candidate records only this source-pool qualification in column J for the three P4 findings. This reinforces the exact H5 scope caveat "non-Alzheimer's, non-aged" without claiming a categorical eligibility exclusion.
+
+A separate retrospective text-anchor audit of **all 23** finding quotation fields verified **20 literal source matches**, **2 deliberate `N/A` fields**, and a third, **P1.F3**, present in the original Lee 2023 author PDF but split by printed line-wrap hyphenation (`restora-\ntion of autolysosomes`). It is *not a fabricated phrase*. This is **quote provenance**, not independent experimental replication. Detailed source hashes and donor audit: [HELLEN_DONOR_ORIGIN_AND_23_QUOTE_AUDIT_20261121.md](HELLEN_DONOR_ORIGIN_AND_23_QUOTE_AUDIT_20261121.md).
+
+The original 23F source-verified workbook and the earlier four-score sensitivity version are **unchanged**. New additions only clarify study-system provenance; directness scoring remains expressly provisional and no challenge portal entry was submitted.
+
 ## Method for every source finding
 
 1. Verify published/preprint status, DOI, PMID, species, experimental lineage, genotype, and source panel directly. Do not call 2026 bioRxiv an accepted journal study.
