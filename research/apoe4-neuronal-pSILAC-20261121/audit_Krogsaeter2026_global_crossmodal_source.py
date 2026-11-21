@@ -4,7 +4,7 @@ import openpyxl, math, hashlib, json, statistics
 from pathlib import Path
 from collections import defaultdict
 from datetime import datetime,timezone
-D=Path.home()/'Research/Mechanism_Atlas_H2/h3_aggregation_20261120'
+D=Path(__file__).resolve().parent
 S3=D/'Krogsaeter2026_Abundance_S3_original.xlsx'
 S4=D/'Krogsaeter2026_pSILAC_S4_original.xlsx'
 PLAN=D/'FROZEN_KROGSAETER_GLOBAL_CROSSMODAL_JOIN_20261121.md'
