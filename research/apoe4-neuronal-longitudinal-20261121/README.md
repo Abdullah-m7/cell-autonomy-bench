@@ -53,6 +53,12 @@ S7A raw source checked independently: MAPT DIV14 p=.00216 and CLU DIV14 p=.00433
 
 [Exact-source permutation script](audit_posthoc_Krogsaeter_S7_8_stage_tests.py) and [posthoc freeze protocol](FROZEN_POSTHOC_S7_STAGE_SELECT_8_PAIRS_20261121.md).
 
+## Small derived numerical table
+
+The [source-derived long-format CSV](Krogsaeter2026_S7_11Protein_Derived_Longitudinal_20261121.csv) provides, for each of the 11 **preselected** target proteins, source-group identity, differentiation day, per-genotype n, mean source log2 intensities and E4−E3 differences in raw S7A versus housekeeping-normalized S7B. The underlying author's full 15.8MB S7 XLSX is *not* redistributed. This derived CSV exists for transparent rechecking of observations, not to claim a new experimental dataset or authorization to infer individual donor trajectories.
+
+A key interpretation: **an arbitrary two-adjacent-visit threshold is not an inferential developmental effect.** MAPT P10636-2 flips sign repeatedly across stages; CLU is elevated in the normalized source at DIV14,21,28 but declines at DIV42; PSME1 is lower in E4 at DIV35/42, though its late-day point estimates are not supported by independent donor replication. Source S4C total MAPT P10636 half-life and S7 protein group P10636-2 are **not identical isoform-resolved measurements**.
+
 ## Reproducibility
 
 1. Download original Table S7 XLSX from the authors into the same folder, named `Krogsaeter2026_Longitudinal_S7_original.xlsx`.
