@@ -96,6 +96,30 @@ We downloaded the scripts and protocols again at pinned GitHub commit `f0b6e1345
 
 The source demonstrates clear heterogeneity in protein turnover/abundance and missing APOE isotope kinetics. We should not attempt to infer a specific apoE4 *aggregate nucleation rate* from an APOE4-associated **whole-proteome** half-life shift, nor use an APP or total MAPT lifetime as a proxy for **seed-competent tau aggregate** clearance. Our next valid experiment would separately quantify intact ApoE monomer, conformational ApoE aggregates, imported seeds, and lysosomal/proteasomal removal **in the same donor-aware human cell system**, with matched loading and independently calibrated assays.
 
+## Independent data modality: translation efficiency (Ribo-seq Table S2B)
+
+To test whether the **shorter total MAPT half-life in E4** could plausibly be explained by **increased translation efficiency**, we downloaded original author **Ribo-seq Table S2**:
+
+- [Author Table S2 from bioRxiv](https://www.biorxiv.org/content/biorxiv/early/2026/07/22/2026.07.15.738801/DC3/embed/media-3.xlsx?download=true)
+- Local source filename `Krogsaeter2026_Translation_Riboseq_S2_original.xlsx`, SHA256 **`9e297d2643179e01b537a227d3551297645e5c97bdb8a277fc48ee1d10303e5f`** (original author data not redistributed).
+- The `S2B` worksheet holds *authors' DESeq2 transcript-level translational efficiency* (ribosome footprints relative to RNA), generally four independent differentiation experiments per APOE genotype, **not four human donors**.
+- [Frozen pre-numeric 20-gene source panel](FROZEN_KROGSAETER_S2_RIBOSEQ_TE_TARGETS_20261121.md), SHA256 **`14379068fa2000dd93e4682422d1d7f3e06242133ab95156d93aac5e753055c5`**, and [deterministic source extractor](reproduce_Krogsaeter2026_Riboseq_TE_deterministic.py).
+
+| Gene | Author E4−E3 TE log2FC | Author FDR | Claim permitted |
+|---|---:|---:|---|
+| MAPT | −0.1379 | 0.9055 | **No significant TE increase**; not evidence of compensatory increased Tau translation |
+| APP | −0.8090 | 0.0897 | Nominal signal but **does not pass FDR<0.05** |
+| SNX27 | +0.6119 | 0.3360 | Not significant; not evidence of a changed synthesis rate |
+| RAB7A | −0.1395 | 0.8395 | Not significant |
+| CAPZA2 | +0.4651 | 0.6094 | Not significant |
+| PSME1 | −0.0841 | **not available in author's source** | No FDR-based significance claim |
+
+Among **17 of the 20 preselected genes represented in S2B**, none had a reported FDR below 0.05. APOE, INPP5D and ACTB were not listed at the targeted transcript level in that TE sheet. For some others, `padj` is missing even where a nominal p exists; **do not promote nominal p without adjusted p**.
+
+This **negative result rules out claiming the current data demonstrate a statistically significant increase in MAPT translational efficiency**. It does **not** show actual synthesis rates are unchanged, since translational efficiency is neither absolute peptide output nor post-translational flux. No mediation of MAPT turnover/aggregate formation is established.
+
+The exact Ribo-seq source script and protocol were downloaded again from immutable GitHub commit `aebfc0afb3ad384486411d417e781c317bfd5564` into a fresh directory on the Mac, supplied with the untouched author Table S2, and returned **exit 0 with SHA-identical deterministic JSON output `57add1bdeb7e22423a671afd4114285dccb0db7172190a70627982a6e330d33e`**. This is source-code reproducibility on ONE dataset, not new experimental replication.
+
 ## Biological and competition boundary
 
 Neither protein-group abundance nor pSILAC half-life establishes **de novo conformational aggregation of APOE4 within nonaged, non-AD human endolysosomes** (the full MecCog H3 hypothesis). The primary APOE half-life is not measurable from these author data. Our **research-stage** next step is matched intracellular delivery of aggregate-free ApoE3/4 plus a separately barcoded preformed-seed control, jointly measuring intact monomer, aggregate conformation, lysosomal location and removal, across independent iPSC parental backgrounds and differentiation batches. Do not misuse 241-point Aβ ThT trajectories as ApoE aggregate rates.
