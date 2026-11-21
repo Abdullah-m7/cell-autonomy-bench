@@ -2,6 +2,12 @@
 
 **Status:** Public method snapshot for an **unsubmitted draft**; not an accepted competition entry or a validated new Alzheimer mechanism. **Team:** Mechanism Atlas (researcher-led, GPT-6-assisted source searching, structured extraction, numerical audit, and coding). Attribution in the Method tab: `both`. No claim of independent human expert sign-off on all rows.
 
+## Conservative directness sensitivity — Class4 d4 vs Class3 d3 (review ONLY)
+
+Official rubric A/A-prime versus B/B-prime: in the two donor-specific MβCD source interventions (P5.F5/P5.F6), pharmacological cholesterol bioavailability is plausibly A-prime, relative to broad endogenous APOE4-disrupted lipid metabolism; DQ-BSA fluorescence is B-prime, relative to actual enzymatic degradation after matching initial intracellular cargo. Known uptake/initial fluorescent and organellar effects justify a conservative **Class4 d4 weak** scientific alternative to the earlier provisional **Class3 d3 moderate**. The published p=.019 and p=.0045 are unchanged. This alternative is NOT objectively official adjudication; an expert might consider controlled cholesterol perturbation direct A and keep Class3.
+
+Only P5.F5/P5.F6 R and S cells may differ in the **separate** comparison workbook, with 6 source papers and 26 findings unchanged. See [A/B surrogate class-sensitivity note](H5_MBCD_CLASS4_VS_CLASS3_SENSITIVITY_20261121.md), including explicit author source and source-selection limits. No ranking formula is published and no entry has been submitted.
+
 ## Source posthoc referee correction — MβCD Fig5b and S5c DQ-BSA (21 November 2026)
 
 The 6-paper/26-finding H5 submission *review candidate* contains two distinct within-paper rescue findings from Mesentier-Louro et al. (*Cell Stem Cell*, doi 10.1016/j.stem.2026.08.001), H5 P5.F5 (Donor1/AG09173 Fig5b) and P5.F6 (Donor2/KOLF2.1J FigS5c). We checked the untouched author **original Zenodo XLSX** for both: MD5 `45973d6d65de8a7d564f41dc2efe44ce` and `fab4450f92e26f1b192f1c33c5d02faf`, respectively.
